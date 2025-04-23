@@ -3,6 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
+      "version": "0.6",
       "coordinateTransformations": [
         {
           "type": "byDimension",
