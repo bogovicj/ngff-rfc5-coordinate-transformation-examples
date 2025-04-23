@@ -2,4 +2,4 @@
 *.swp
 
 # ignore any zarr data
-[0-9]*
+**/*[0-9]
