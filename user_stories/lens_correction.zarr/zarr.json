@@ -15,13 +15,23 @@
               "name": "lens correction",
               "path": "coordinateTransformations/lensCorrection",
               "interpolation": "linear",
-              "input": [ "y", "x" ],
-              "output": [ "y", "x" ]
+              "input": [
+                "y",
+                "x"
+              ],
+              "output": [
+                "y",
+                "x"
+              ]
             },
             {
               "type": "identity",
-              "input": [ "z" ],
-              "output": [ "z" ]
+              "input": [
+                "z"
+              ],
+              "output": [
+                "z"
+              ]
             }
           ],
           "name": "lens correction 3d"

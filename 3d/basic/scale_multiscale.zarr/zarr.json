@@ -75,13 +75,12 @@
                 "scale": [
                   16,
                   12,
-                   8 
+                  8
                 ]
               }
             ]
           }
-        ],
-        "coordinateTransformations": []
+        ]
       }
     }
   }

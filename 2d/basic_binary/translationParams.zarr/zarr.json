@@ -1,1 +1,45 @@
-{"zarr_format":3,"node_type":"group","attributes":{"ome":{"multiscales":{"name":"multiscales","version":"0.6","coordinateSystems":[{"name":"physical","axes":[{"type":"space","name":"y","unit":"micrometer","discrete":false},{"type":"space","name":"x","unit":"micrometer","discrete":false}]}],"datasets":[{"path":"array","coordinateTransformations":[{"type":"translation","output":"physical","path":"translationParams","input":"array","name":"transform-name"}]}],"coordinateTransformations":[]}}}}
+{
+  "zarr_format": 3,
+  "node_type": "group",
+  "attributes": {
+    "ome": {
+      "multiscales": {
+        "name": "multiscales",
+        "version": "0.6",
+        "coordinateSystems": [
+          {
+            "name": "physical",
+            "axes": [
+              {
+                "type": "space",
+                "name": "y",
+                "unit": "micrometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "x",
+                "unit": "micrometer",
+                "discrete": false
+              }
+            ]
+          }
+        ],
+        "datasets": [
+          {
+            "path": "array",
+            "coordinateTransformations": [
+              {
+                "type": "translation",
+                "output": "physical",
+                "path": "translationParams",
+                "input": "array",
+                "name": "transform-name"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
