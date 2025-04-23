@@ -1,0 +1,82 @@
+{
+  "node_type": "array",
+  "chunk_key_encoding": {
+    "name": "default",
+    "configuration": {
+      "separator": "/"
+    }
+  },
+  "shape": [
+    26,
+    26,
+    2
+  ],
+  "chunk_grid": {
+    "name": "regular",
+    "configuration": {
+      "chunk_shape": [
+        26,
+        2,
+        2
+      ]
+    }
+  },
+  "codecs": [
+    {
+      "name": "bytes",
+      "configuration": {
+        "endian": "big"
+      }
+    },
+    {
+      "name": "zstandard",
+      "configuration": {
+        "level": 3
+      }
+    }
+  ],
+  "data_type": "float64",
+  "fill_value": 0,
+  "zarr_format": 3,
+  "attributes": {
+    "ome": {
+      "coordinateSystems": [
+        {
+          "name": "raw2d",
+          "axes": [
+            {
+              "type": "space",
+              "name": "y",
+              "unit": "nanometer",
+              "discrete": false
+            },
+            {
+              "type": "space",
+              "name": "x",
+              "unit": "nanometer",
+              "discrete": false
+            },
+            {
+              "type": "displacement",
+              "name": "d",
+              "discrete": true
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [
+        {
+          "type": "scale",
+          "output": "raw2d",
+          "input": ".",
+          "name": "displacement field sample spacing",
+          "scale": [
+            5,
+            5,
+            1
+          ]
+        }
+      ]
+    }
+  }
+}

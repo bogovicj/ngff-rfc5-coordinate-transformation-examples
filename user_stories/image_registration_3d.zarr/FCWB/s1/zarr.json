@@ -1,0 +1,41 @@
+{
+  "node_type": "array",
+  "chunk_key_encoding": {
+    "name": "default",
+    "configuration": {
+      "separator": "/"
+    }
+  },
+  "shape": [
+    45,
+    136,
+    235
+  ],
+  "chunk_grid": {
+    "name": "regular",
+    "configuration": {
+      "chunk_shape": [
+        32,
+        128,
+        128
+      ]
+    }
+  },
+  "codecs": [
+    {
+      "name": "bytes",
+      "configuration": {
+        "endian": "big"
+      }
+    },
+    {
+      "name": "zstandard",
+      "configuration": {
+        "level": 3
+      }
+    }
+  ],
+  "data_type": "uint8",
+  "fill_value": 0,
+  "zarr_format": 3
+}

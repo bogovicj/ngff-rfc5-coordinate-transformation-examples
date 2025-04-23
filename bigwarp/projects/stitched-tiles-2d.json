@@ -1,0 +1,358 @@
+{
+  "Sources": {
+    "0": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_0",
+      "name": "tile_0",
+      "isMoving": false
+    },
+    "1": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_1",
+      "name": "tile_1",
+      "isMoving": false
+    },
+    "2": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_2",
+      "name": "tile_2",
+      "isMoving": false
+    },
+    "3": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_3",
+      "name": "tile_3",
+      "isMoving": false
+    },
+    "4": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_0",
+      "name": "tile_0",
+      "isMoving": true,
+      "transform": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?#ome/coordinateTransformations[0]<inverse>"
+    },
+    "5": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_1",
+      "name": "tile_1",
+      "isMoving": true,
+      "transform": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?#ome/coordinateTransformations[1]<inverse>"
+    },
+    "6": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_2",
+      "name": "tile_2",
+      "isMoving": true,
+      "transform": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?#ome/coordinateTransformations[2]<inverse>"
+    },
+    "7": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?tile_3",
+      "name": "tile_3",
+      "isMoving": true,
+      "transform": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/stitched_tiles_2d.zarr?#ome/coordinateTransformations[3]<inverse>"
+    }
+  },
+  "ViewerP": {
+    "Sources": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "DisplayMode": "sg",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 0,
+    "CurrentGroup": 10,
+    "CurrentTimePoint": 0
+  },
+  "ViewerQ": {
+    "Sources": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "DisplayMode": "sg",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 0,
+    "CurrentGroup": 11,
+    "CurrentTimePoint": 0
+  },
+  "SetupAssignments": {
+    "ConverterSetups": {
+      "0": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 0
+      },
+      "1": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 1
+      },
+      "2": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 2
+      },
+      "3": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 3
+      },
+      "4": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 4
+      },
+      "5": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 5
+      },
+      "6": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 6
+      },
+      "7": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 7
+      }
+    },
+    "MinMaxGroups": {
+      "0": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "1": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "2": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "3": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "4": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "5": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "6": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "7": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      }
+    }
+  },
+  "Bookmarks": {
+    "bookmarks": {}
+  },
+  "Transform": {
+    "type": "Thin Plate Spline",
+    "landmarks": {
+      "type": "BigWarpLandmarks",
+      "numDimensions": 2,
+      "movingPoints": [],
+      "fixedPoints": [],
+      "active": [],
+      "names": []
+    }
+  }
+}

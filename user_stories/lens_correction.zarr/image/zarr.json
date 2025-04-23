@@ -1,0 +1,55 @@
+{
+  "zarr_format": 3,
+  "node_type": "group",
+  "attributes": {
+    "ome": {
+      "version": "0.6",
+      "multiscales": {
+        "name": "multiscales",
+        "coordinateSystems": [
+          {
+            "name": "raw",
+            "axes": [
+              {
+                "type": "space",
+                "name": "z",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "y",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "x",
+                "unit": "nanometer",
+                "discrete": false
+              }
+            ]
+          }
+        ],
+        "datasets": [
+          {
+            "path": "0",
+            "coordinateTransformations": [
+              {
+                "type": "scale",
+                "output": "raw",
+                "input": "0",
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            ]
+          }
+        ],
+        "coordinateTransformations": []
+      }
+    }
+  }
+}

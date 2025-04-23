@@ -1,0 +1,217 @@
+{
+  "Sources": {
+    "0": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/image_registration_3d.zarr/?FCWB",
+      "name": "FCWB",
+      "isMoving": true,
+      "transform": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/image_registration_3d.zarr/?#ome/coordinateTransformations[0]"
+    },
+    "1": {
+       "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/user_stories/image_registration_3d.zarr/?JRC2018F",
+      "name": "JRC2018F",
+      "isMoving": false
+    }
+  },
+  "ViewerP": {
+    "Sources": [
+      true,
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": [
+          0
+        ]
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          1
+        ]
+      }
+    ],
+    "DisplayMode": "ss",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 0,
+    "CurrentGroup": 10,
+    "CurrentTimePoint": 0
+  },
+  "ViewerQ": {
+    "Sources": [
+      true,
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": [
+          0
+        ]
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          1
+        ]
+      }
+    ],
+    "DisplayMode": "ss",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 1,
+    "CurrentGroup": 11,
+    "CurrentTimePoint": 0
+  },
+  "SetupAssignments": {
+    "ConverterSetups": {
+      "0": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 0
+      },
+      "1": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 1
+      }
+    },
+    "MinMaxGroups": {
+      "0": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      },
+      "1": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      }
+    }
+  },
+  "Bookmarks": {
+    "bookmarks": {}
+  },
+  "Transform": {
+    "type": "Thin Plate Spline",
+    "landmarks": {
+      "type": "BigWarpLandmarks",
+      "numDimensions": 3,
+      "movingPoints": [],
+      "fixedPoints": [],
+      "active": [],
+      "names": []
+    }
+  }
+}
