@@ -81,9 +81,9 @@
                   {
                     "type": "translation",
                     "translation": [
-                      2.0,
+                      2,
                       1.5,
-                      1.0
+                      1
                     ],
                     "name": ""
                   }
@@ -111,9 +111,9 @@
                   {
                     "type": "translation",
                     "translation": [
-                      6.0,
+                      6,
                       4.5,
-                      3.0
+                      3
                     ],
                     "name": ""
                   }
