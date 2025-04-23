@@ -3,9 +3,9 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "multiscales": {
+      "version": "0.6",
+      "multiscales": [{
         "name": "multiscales",
-        "version": "0.6",
         "coordinateSystems": [
           {
             "name": "physical",
@@ -37,15 +37,15 @@
                   {
                     "type": "scale",
                     "scale": [
-                      3,
-                      2
+                      3.0,
+                      2.0
                     ]
                   },
                   {
                     "type": "translation",
                     "translation": [
-                      30,
-                      20
+                      30.0,
+                      20.0
                     ],
                     "name": ""
                   }
@@ -55,7 +55,7 @@
             ]
           }
         ]
-      }
+      }]
     }
   }
 }
