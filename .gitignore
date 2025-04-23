@@ -1,0 +1,5 @@
+*.bak
+*.swp
+
+# ignore any zarr data
+[0-9]*
