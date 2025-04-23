@@ -3,7 +3,8 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "multiscales": {
+      "version": "0.6",
+      "multiscales": [{
         "name": "multiscales",
         "coordinateSystems": [
           {
@@ -58,8 +59,7 @@
             ]
           }
         ]
-      },
-      "version": "0.6-dev"
+      }]
     }
   }
 }

@@ -4,7 +4,7 @@
   "attributes": {
     "ome": {
       "version": "0.6",
-      "multiscales": {
+      "multiscales": [{
         "name": "multiscales",
         "coordinateSystems": [
           {
@@ -126,7 +126,7 @@
             ]
           }
         ]
-      }
+      }]
     }
   }
 }

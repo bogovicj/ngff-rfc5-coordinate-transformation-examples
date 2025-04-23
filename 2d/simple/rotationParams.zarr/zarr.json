@@ -3,9 +3,9 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "multiscales": {
+      "version": "0.6",
+      "multiscales": [{
         "name": "multiscales",
-        "version": "0.6",
         "coordinateSystems": [
           {
             "name": "physical",
@@ -39,7 +39,7 @@
             ]
           }
         ]
-      }
+      }]
     }
   }
 }
