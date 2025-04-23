@@ -1,0 +1,191 @@
+{
+  "Sources": {
+    "0": {
+      "uri": "zarr3:s3://ngff-rfc5-coordinate-transformation-examples/3d/nonlinear/invCoordinates.zarr/?",
+      "name": "",
+      "isMoving": false
+    }
+  },
+  "ViewerP": {
+    "Sources": [
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          0
+        ]
+      }
+    ],
+    "DisplayMode": "sg",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 0,
+    "CurrentGroup": 10,
+    "CurrentTimePoint": 0
+  },
+  "ViewerQ": {
+    "Sources": [
+      true
+    ],
+    "SourceGroups": [
+      {
+        "active": true,
+        "name": "group 1",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 2",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 3",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 4",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 5",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 6",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 7",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 8",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 9",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "group 10",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "moving images",
+        "id": []
+      },
+      {
+        "active": true,
+        "name": "target images",
+        "id": [
+          0
+        ]
+      }
+    ],
+    "DisplayMode": "ss",
+    "Interpolation": "nearestneighbor",
+    "CurrentSource": 0,
+    "CurrentGroup": 11,
+    "CurrentTimePoint": 0
+  },
+  "SetupAssignments": {
+    "ConverterSetups": {
+      "0": {
+        "min": 0,
+        "max": 255,
+        "color": -1,
+        "groupId": 0
+      }
+    },
+    "MinMaxGroups": {
+      "0": {
+        "fullRangeMin": -2147483648,
+        "fullRangeMax": 2147483647,
+        "rangeMin": 0,
+        "rangeMax": 65535,
+        "currentMin": 0,
+        "currentMax": 255
+      }
+    }
+  },
+  "Bookmarks": {
+    "bookmarks": {}
+  },
+  "Transform": {
+    "type": "Thin Plate Spline",
+    "landmarks": {
+      "type": "BigWarpLandmarks",
+      "numDimensions": 2,
+      "movingPoints": [],
+      "fixedPoints": [],
+      "active": [],
+      "names": []
+    }
+  }
+}
