@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [[ $# == "0" ]]; then
+    echo "Provide a path to your fiji installation"
+fi
+
+
+fijiPath="$1"
+echo $fijiPath
+
+rm $fijiPath/jars/n5-[0-9]*.jar
+rm $fijiPath/jars/n5-aws*jar
+rm $fijiPath/jars/n5-blosc*jar
+rm $fijiPath/jars/n5-google*jar
+rm $fijiPath/jars/n5-ij*jar
+rm $fijiPath/jars/n5-imglib2*jar
+rm $fijiPath/jars/n5-universe*jar
+rm $fijiPath/jars/n5-zarr*jar
+rm $fijiPath/jars/n5-zstandard*jar
+
+rm $fijiPath/plugins/n5-viewer*jar
+rm $fijiPath/plugins/bigwarp*jar
+
+aws s3 sync s3://ngff-rfc5-coordinate-transformation-examples/bigwarp/jars/ $fijiPath/jars/
+aws s3 sync s3://ngff-rfc5-coordinate-transformation-examples/bigwarp/plugins/ $fijiPath/plugins/
