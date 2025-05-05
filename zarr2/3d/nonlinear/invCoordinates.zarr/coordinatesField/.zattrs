@@ -1,0 +1,1 @@
+{"ome":{"coordinateSystems":[{"name":"0","axes":[{"type":"array","name":"z","discrete":false},{"type":"array","name":"y","discrete":false},{"type":"array","name":"x","discrete":false},{"type":"coordinate","name":"c","discrete":true}]}],"coordinateTransformations":[{"type":"scale","output":"0","input":"0","scale":[1,1,1,1]}]}}
