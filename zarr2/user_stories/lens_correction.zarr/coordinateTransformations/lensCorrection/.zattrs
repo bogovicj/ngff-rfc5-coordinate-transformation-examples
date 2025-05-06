@@ -1,1 +1,41 @@
-{"ome":{"coordinateSystems":[{"name":"raw2d","axes":[{"type":"space","name":"y","unit":"nanometer","discrete":false},{"type":"space","name":"x","unit":"nanometer","discrete":false},{"type":"displacement","name":"d","discrete":true}]}],"coordinateTransformations":[{"type":"scale","output":"raw2d","input":".","name":"displacement field sample spacing","scale":[5,5,1]}]}}
+{
+  "ome": {
+    "coordinateSystems": [
+      {
+        "name": "raw2d",
+        "axes": [
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "nanometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "nanometer",
+            "discrete": false
+          },
+          {
+            "type": "displacement",
+            "name": "d",
+            "discrete": true
+          }
+        ]
+      }
+    ],
+    "coordinateTransformations": [
+      {
+        "type": "scale",
+        "output": "raw2d",
+        "input": ".",
+        "name": "displacement field sample spacing",
+        "scale": [
+          5,
+          5,
+          1
+        ]
+      }
+    ]
+  }
+}
