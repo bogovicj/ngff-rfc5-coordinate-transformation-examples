@@ -1,1 +1,134 @@
-{"ome":{"version":"0.6.dev1","coordinateTransformations":[{"type":"translation","output":"world","input":"tile_0_mm","translation":[0,0],"name":"tile_0_mm to world"},{"type":"translation","output":"world","input":"tile_1_mm","translation":[0,348],"name":"tile_1_mm to world"},{"type":"translation","output":"world","input":"tile_2_mm","translation":[276,0],"name":"tile_2_mm to world"},{"type":"translation","output":"world","input":"tile_3_mm","translation":[276,348],"name":"tile_3_mm to world"}],"coordinateSystems":[{"name":"world","axes":[{"type":"space","name":"x","unit":"micrometer","discrete":false},{"type":"space","name":"y","unit":"micrometer","discrete":false}]},{"name":"tile_0_mm","axes":[{"type":"space","name":"x","unit":"micrometer","discrete":false},{"type":"space","name":"y","unit":"micrometer","discrete":false}]},{"name":"tile_1_mm","axes":[{"type":"space","name":"x","unit":"micrometer","discrete":false},{"type":"space","name":"y","unit":"micrometer","discrete":false}]},{"name":"tile_2_mm","axes":[{"type":"space","name":"x","unit":"micrometer","discrete":false},{"type":"space","name":"y","unit":"micrometer","discrete":false}]},{"name":"tile_3_mm","axes":[{"type":"space","name":"x","unit":"micrometer","discrete":false},{"type":"space","name":"y","unit":"micrometer","discrete":false}]}]}}
+{
+  "ome": {
+    "version": "0.6.dev1",
+    "coordinateTransformations": [
+      {
+        "type": "translation",
+        "output": "world",
+        "input": "tile_0_mm",
+        "translation": [
+          0,
+          0
+        ],
+        "name": "tile_0_mm to world"
+      },
+      {
+        "type": "translation",
+        "output": "world",
+        "input": "tile_1_mm",
+        "translation": [
+          0,
+          348
+        ],
+        "name": "tile_1_mm to world"
+      },
+      {
+        "type": "translation",
+        "output": "world",
+        "input": "tile_2_mm",
+        "translation": [
+          276,
+          0
+        ],
+        "name": "tile_2_mm to world"
+      },
+      {
+        "type": "translation",
+        "output": "world",
+        "input": "tile_3_mm",
+        "translation": [
+          276,
+          348
+        ],
+        "name": "tile_3_mm to world"
+      }
+    ],
+    "coordinateSystems": [
+      {
+        "name": "world",
+        "axes": [
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "micrometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "micrometer",
+            "discrete": false
+          }
+        ]
+      },
+      {
+        "name": "tile_0_mm",
+        "axes": [
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "micrometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "micrometer",
+            "discrete": false
+          }
+        ]
+      },
+      {
+        "name": "tile_1_mm",
+        "axes": [
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "micrometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "micrometer",
+            "discrete": false
+          }
+        ]
+      },
+      {
+        "name": "tile_2_mm",
+        "axes": [
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "micrometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "micrometer",
+            "discrete": false
+          }
+        ]
+      },
+      {
+        "name": "tile_3_mm",
+        "axes": [
+          {
+            "type": "space",
+            "name": "x",
+            "unit": "micrometer",
+            "discrete": false
+          },
+          {
+            "type": "space",
+            "name": "y",
+            "unit": "micrometer",
+            "discrete": false
+          }
+        ]
+      }
+    ]
+  }
+}
