@@ -35,5 +35,53 @@
   ],
   "data_type": "uint8",
   "fill_value": 0,
-  "zarr_format": 3
+  "zarr_format": 3,
+  "attributes": {
+    "ome": {
+      "coordinateSystems": [
+        {
+          "name": "physical",
+          "axes": [
+            {
+              "type": "space",
+              "name": "y",
+              "unit": "micrometer",
+              "discrete": false
+            },
+            {
+              "type": "space",
+              "name": "x",
+              "unit": "micrometer",
+              "discrete": false
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [
+        {
+          "type": "sequence",
+          "output": "physical",
+          "input": "",
+          "transformations": [
+            {
+              "type": "scale",
+              "scale": [
+                6,
+                4
+              ]
+            },
+            {
+              "type": "translation",
+              "translation": [
+                1.5,
+                1
+              ],
+              "name": ""
+            }
+          ],
+          "name": "transform-name"
+        }
+      ]
+    }
+  }
 }

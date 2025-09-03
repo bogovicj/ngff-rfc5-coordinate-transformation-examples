@@ -37,5 +37,62 @@
   ],
   "data_type": "uint8",
   "fill_value": 0,
-  "zarr_format": 3
+  "zarr_format": 3,
+  "attributes": {
+    "ome": {
+      "coordinateSystems": [
+        {
+          "name": "physical",
+          "axes": [
+            {
+              "type": "space",
+              "name": "z",
+              "unit": "micrometer",
+              "discrete": false
+            },
+            {
+              "type": "space",
+              "name": "y",
+              "unit": "micrometer",
+              "discrete": false
+            },
+            {
+              "type": "space",
+              "name": "x",
+              "unit": "micrometer",
+              "discrete": false
+            }
+          ]
+        }
+      ],
+      "coordinateTransformations": [
+        {
+          "type": "affine",
+          "output": "physical",
+          "input": "",
+          "name": "transform-name",
+          "affine": [
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  }
 }
