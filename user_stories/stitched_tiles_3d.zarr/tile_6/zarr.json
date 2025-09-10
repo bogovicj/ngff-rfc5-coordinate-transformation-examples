@@ -2,8 +2,8 @@
   "zarr_format": 3,
   "node_type": "group",
   "attributes": {
-    "version": "0.6.dev1",
     "ome": {
+      "version": "0.6.dev2",
       "multiscales": [
         {
           "name": "multiscales",
@@ -48,8 +48,7 @@
             }
           ]
         }
-      ],
-      "version": "0.6.dev2"
+      ]
     }
   }
 }
