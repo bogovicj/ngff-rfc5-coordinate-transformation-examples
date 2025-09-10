@@ -4,32 +4,32 @@
   "attributes": {
     "version": "0.6.dev1",
     "ome": {
-      "multiscales": [{
-        "name": "multiscales",
-        "coordinateSystems": [
-          {
-            "name": "tile_0_mm",
-            "axes": [
-              {
-                "type": "space",
-                "name": "y",
-                "unit": "micrometer",
-                "discrete": false
-              },
-              {
-                "type": "space",
-                "name": "x",
-                "unit": "micrometer",
-                "discrete": false
-              }
-            ]
-          }
-        ],
-        "datasets": [
-          {
-            "path": "0",
-            "coordinateTransformations": [
-              {
+      "multiscales": [
+        {
+          "name": "multiscales",
+          "coordinateSystems": [
+            {
+              "name": "tile_0_mm",
+              "axes": [
+                {
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "path": "0",
+              "coordinateTransformation": {
                 "type": "scale",
                 "output": "tile_0_mm",
                 "input": "0",
@@ -39,10 +39,11 @@
                   1
                 ]
               }
-            ]
-          }
-        ]
-      }]
+            }
+          ]
+        }
+      ],
+      "version": "0.6.dev2"
     }
   }
 }

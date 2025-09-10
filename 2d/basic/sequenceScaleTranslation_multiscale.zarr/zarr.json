@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6.dev2",
       "multiscales": [
         {
           "name": "multiscales",
@@ -29,79 +29,73 @@
           "datasets": [
             {
               "path": "s0",
-              "coordinateTransformations": [
-                {
-                  "type": "sequence",
-                  "output": "physical",
-                  "input": "",
-                  "transformations": [
-                    {
-                      "type": "scale",
-                      "scale": [
-                        3,
-                        2
-                      ]
-                    }
-                  ],
-                  "name": "transform-name"
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "sequence",
+                "output": "physical",
+                "input": "",
+                "transformations": [
+                  {
+                    "type": "scale",
+                    "scale": [
+                      3,
+                      2
+                    ]
+                  }
+                ],
+                "name": "transform-name"
+              }
             },
             {
               "path": "s1",
-              "coordinateTransformations": [
-                {
-                  "type": "sequence",
-                  "output": "physical",
-                  "input": "",
-                  "transformations": [
-                    {
-                      "type": "scale",
-                      "scale": [
-                        6,
-                        4
-                      ]
-                    },
-                    {
-                      "type": "translation",
-                      "translation": [
-                        1.5,
-                        1
-                      ],
-                      "name": ""
-                    }
-                  ],
-                  "name": "transform-name"
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "sequence",
+                "output": "physical",
+                "input": "",
+                "transformations": [
+                  {
+                    "type": "scale",
+                    "scale": [
+                      6,
+                      4
+                    ]
+                  },
+                  {
+                    "type": "translation",
+                    "translation": [
+                      1.5,
+                      1
+                    ],
+                    "name": ""
+                  }
+                ],
+                "name": "transform-name"
+              }
             },
             {
               "path": "s2",
-              "coordinateTransformations": [
-                {
-                  "type": "sequence",
-                  "output": "physical",
-                  "input": "",
-                  "transformations": [
-                    {
-                      "type": "scale",
-                      "scale": [
-                        12,
-                        8
-                      ]
-                    },
-                    {
-                      "type": "translation",
-                      "translation": [
-                        4.5,
-                        3
-                      ],
-                      "name": ""
-                    }
-                  ],
-                  "name": "transform-name"
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "sequence",
+                "output": "physical",
+                "input": "",
+                "transformations": [
+                  {
+                    "type": "scale",
+                    "scale": [
+                      12,
+                      8
+                    ]
+                  },
+                  {
+                    "type": "translation",
+                    "translation": [
+                      4.5,
+                      3
+                    ],
+                    "name": ""
+                  }
+                ],
+                "name": "transform-name"
+              }
             }
           ]
         }

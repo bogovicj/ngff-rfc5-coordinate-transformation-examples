@@ -3,39 +3,39 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
-      "multiscales": [{
-        "name": "multiscales",
-        "coordinateSystems": [
-          {
-            "name": "FCWB",
-            "axes": [
-              {
-                "type": "space",
-                "name": "z",
-                "unit": "micrometer",
-                "discrete": false
-              },
-              {
-                "type": "space",
-                "name": "y",
-                "unit": "micrometer",
-                "discrete": false
-              },
-              {
-                "type": "space",
-                "name": "x",
-                "unit": "micrometer",
-                "discrete": false
-              }
-            ]
-          }
-        ],
-        "datasets": [
-          {
-            "path": "s0",
-            "coordinateTransformations": [
-              {
+      "version": "0.6.dev2",
+      "multiscales": [
+        {
+          "name": "multiscales",
+          "coordinateSystems": [
+            {
+              "name": "FCWB",
+              "axes": [
+                {
+                  "type": "space",
+                  "name": "z",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
+                }
+              ]
+            }
+          ],
+          "datasets": [
+            {
+              "path": "s0",
+              "coordinateTransformation": {
                 "type": "scale",
                 "output": "FCWB",
                 "input": "s0",
@@ -45,12 +45,10 @@
                   1.2
                 ]
               }
-            ]
-          },
-          {
-            "path": "s1",
-            "coordinateTransformations": [
-              {
+            },
+            {
+              "path": "s1",
+              "coordinateTransformation": {
                 "type": "sequence",
                 "output": "FCWB",
                 "input": "s1",
@@ -73,10 +71,10 @@
                   }
                 ]
               }
-            ]
-          }
-        ]
-      }]
+            }
+          ]
+        }
+      ]
     }
   }
 }

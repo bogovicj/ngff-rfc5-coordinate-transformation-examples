@@ -35,22 +35,21 @@
           "datasets": [
             {
               "path": "0",
-              "coordinateTransformations": [
-                {
-                  "type": "scale",
-                  "output": "tile_0_mm",
-                  "input": "0",
-                  "name": "tile_0 to physical",
-                  "scale": [
-                    1,
-                    1
-                  ]
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "scale",
+                "output": "tile_0_mm",
+                "input": "0",
+                "name": "tile_0 to physical",
+                "scale": [
+                  1,
+                  1
+                ]
+              }
             }
           ]
         }
-      ]
+      ],
+      "version": "0.6.dev2"
     }
   }
 }

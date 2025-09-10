@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6.dev2",
       "multiscales": [
         {
           "name": "multiscales",
@@ -29,72 +29,66 @@
           "datasets": [
             {
               "path": "s0",
-              "coordinateTransformations": [
-                {
-                  "type": "affine",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      3,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      2,
-                      0
-                    ]
+              "coordinateTransformation": {
+                "type": "affine",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "affine": [
+                  [
+                    3,
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    2,
+                    0
                   ]
-                }
-              ]
+                ]
+              }
             },
             {
               "path": "s1",
-              "coordinateTransformations": [
-                {
-                  "type": "affine",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      6,
-                      0,
-                      1.5
-                    ],
-                    [
-                      0,
-                      4,
-                      1
-                    ]
+              "coordinateTransformation": {
+                "type": "affine",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "affine": [
+                  [
+                    6,
+                    0,
+                    1.5
+                  ],
+                  [
+                    0,
+                    4,
+                    1
                   ]
-                }
-              ]
+                ]
+              }
             },
             {
               "path": "s2",
-              "coordinateTransformations": [
-                {
-                  "type": "affine",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      12,
-                      0,
-                      4.5
-                    ],
-                    [
-                      0,
-                      8,
-                      3
-                    ]
+              "coordinateTransformation": {
+                "type": "affine",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "affine": [
+                  [
+                    12,
+                    0,
+                    4.5
+                  ],
+                  [
+                    0,
+                    8,
+                    3
                   ]
-                }
-              ]
+                ]
+              }
             }
           ]
         }

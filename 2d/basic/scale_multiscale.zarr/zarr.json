@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6.dev2",
       "multiscales": [
         {
           "name": "multiscales",
@@ -29,48 +29,42 @@
           "datasets": [
             {
               "path": "s0",
-              "coordinateTransformations": [
-                {
-                  "type": "scale",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "scale": [
-                    6.0,
-                    4.0
-                  ]
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "scale",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "scale": [
+                  6,
+                  4
+                ]
+              }
             },
             {
               "path": "s1",
-              "coordinateTransformations": [
-                {
-                  "type": "scale",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "scale": [
-                    12.0,
-                    8.0
-                  ]
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "scale",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "scale": [
+                  12,
+                  8
+                ]
+              }
             },
             {
               "path": "s2",
-              "coordinateTransformations": [
-                {
-                  "type": "scale",
-                  "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "scale": [
-                    24.0,
-                    16.0
-                  ]
-                }
-              ]
+              "coordinateTransformation": {
+                "type": "scale",
+                "output": "physical",
+                "input": "",
+                "name": "transform-name",
+                "scale": [
+                  24,
+                  16
+                ]
+              }
             }
           ]
         }
