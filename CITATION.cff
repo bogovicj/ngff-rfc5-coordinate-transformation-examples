@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "ngff rfc5 coordinate transformation examples"
+version: 0.6-dev1-rev1
+license: "MIT"
+type: dataset
+abstract: "This dataset contains examples of coordinate transformations for the [NGFF RFC5 specification proposal](https://ngff.openmicroscopy.org/rfc/5/index.html)."
+authors:
+  - given-names: John
+    family-names: Bogovic
+    affiliation: HHMI Janelia
+    orcid: "https://orcid.org/0000-0002-4829-9457"
+  - given-names: Johannes
+    family-names: Soltwedel
+    affiliation: German BioImaging - Society for Microscopy and Image Analysis e.V.
+    orcid: "https://orcid.org/0000-0003-1273-2412"
+keywords:
+  - computer science
+  - software
+  - metadata
+  - bioimaging
