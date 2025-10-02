@@ -6,19 +6,11 @@
       "separator": "/"
     }
   },
-  "shape": [
-    27,
-    226,
-    186
-  ],
+  "shape": [27, 226, 186],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        27,
-        226,
-        186
-      ]
+      "chunk_shape": [27, 226, 186]
     }
   },
   "codecs": [
@@ -29,7 +21,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }

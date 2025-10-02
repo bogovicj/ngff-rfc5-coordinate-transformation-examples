@@ -1,19 +1,11 @@
 {
   "node_type": "array",
   "zarr_format": 3,
-  "shape": [
-    576,
-    720,
-    2
-  ],
+  "shape": [576, 720, 2],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        576,
-        720,
-        2
-      ]
+      "chunk_shape": [576, 720, 2]
     }
   },
   "chunk_key_encoding": {
@@ -24,11 +16,7 @@
   },
   "data_type": "float64",
   "fill_value": 0,
-  "dimension_names": [
-    "y",
-    "x",
-    "d"
-  ],
+  "dimension_names": ["y", "x", "d"],
   "codecs": [
     {
       "name": "bytes",
@@ -37,7 +25,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }
@@ -72,11 +60,7 @@
           "type": "scale",
           "output": "0",
           "input": "0",
-          "scale": [
-            1,
-            1,
-            1
-          ]
+          "scale": [1, 1, 1]
         }
       ]
     }

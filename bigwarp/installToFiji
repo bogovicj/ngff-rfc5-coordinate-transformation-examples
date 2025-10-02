@@ -16,7 +16,7 @@ rm $fijiPath/jars/n5-ij*jar
 rm $fijiPath/jars/n5-imglib2*jar
 rm $fijiPath/jars/n5-universe*jar
 rm $fijiPath/jars/n5-zarr*jar
-rm $fijiPath/jars/n5-zstandard*jar
+rm $fijiPath/jars/n5-zstd*jar
 
 rm $fijiPath/plugins/n5-viewer*jar
 rm $fijiPath/plugins/bigwarp*jar

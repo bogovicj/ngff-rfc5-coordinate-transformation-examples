@@ -6,27 +6,12 @@
       "separator": "/"
     }
   },
-  "shape": [
-    104,
-    166,
-    357,
-    3
-  ],
-  "dimension_names": [
-    "z",
-    "y",
-    "x",
-    "d"
-  ],
+  "shape": [104, 166, 357, 3],
+  "dimension_names": ["z", "y", "x", "d"],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        64,
-        64,
-        64,
-        3
-      ]
+      "chunk_shape": [64, 64, 64, 3]
     }
   },
   "codecs": [
@@ -37,7 +22,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }
@@ -84,12 +69,7 @@
           "output": "JRC2018F",
           "input": "dfield",
           "name": "",
-          "scale": [
-            1.76,
-            1.76,
-            1.76,
-            1
-          ]
+          "scale": [1.76, 1.76, 1.76, 1]
         }
       ]
     }

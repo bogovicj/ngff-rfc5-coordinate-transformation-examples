@@ -6,17 +6,11 @@
       "separator": "/"
     }
   },
-  "shape": [
-    576,
-    720
-  ],
+  "shape": [576, 720],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        576,
-        720
-      ]
+      "chunk_shape": [576, 720]
     }
   },
   "codecs": [
@@ -27,7 +21,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }

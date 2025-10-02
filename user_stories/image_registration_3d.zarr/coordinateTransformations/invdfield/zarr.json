@@ -6,21 +6,11 @@
       "separator": "/"
     }
   },
-  "shape": [
-    104,
-    166,
-    357,
-    3
-  ],
+  "shape": [104, 166, 357, 3],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        64,
-        64,
-        64,
-        3
-      ]
+      "chunk_shape": [64, 64, 64, 3]
     }
   },
   "codecs": [
@@ -31,7 +21,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }
@@ -78,12 +68,7 @@
           "output": "FCWB",
           "input": "invdfield",
           "name": "",
-          "scale": [
-            1.76,
-            1.76,
-            1.76,
-            1
-          ]
+          "scale": [1.76, 1.76, 1.76, 1]
         }
       ]
     }

@@ -1,21 +1,11 @@
 {
   "node_type": "array",
   "zarr_format": 3,
-  "shape": [
-    27,
-    226,
-    186,
-    3
-  ],
+  "shape": [27, 226, 186, 3],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        27,
-        226,
-        186,
-        3
-      ]
+      "chunk_shape": [27, 226, 186, 3]
     }
   },
   "chunk_key_encoding": {
@@ -34,7 +24,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }
@@ -74,12 +64,7 @@
           "type": "scale",
           "output": "0",
           "input": "0",
-          "scale": [
-            1,
-            1,
-            1,
-            1
-          ]
+          "scale": [1, 1, 1, 1]
         }
       ]
     }

@@ -6,19 +6,11 @@
       "separator": "/"
     }
   },
-  "shape": [
-    26,
-    26,
-    2
-  ],
+  "shape": [26, 26, 2],
   "chunk_grid": {
     "name": "regular",
     "configuration": {
-      "chunk_shape": [
-        26,
-        2,
-        2
-      ]
+      "chunk_shape": [26, 2, 2]
     }
   },
   "codecs": [
@@ -29,7 +21,7 @@
       }
     },
     {
-      "name": "zstandard",
+      "name": "zstd",
       "configuration": {
         "level": 3
       }
@@ -70,11 +62,7 @@
           "output": "raw2d",
           "input": ".",
           "name": "displacement field sample spacing",
-          "scale": [
-            5,
-            5,
-            1
-          ]
+          "scale": [5, 5, 1]
         }
       ]
     }
