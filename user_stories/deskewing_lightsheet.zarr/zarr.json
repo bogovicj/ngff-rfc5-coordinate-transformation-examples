@@ -6,6 +6,29 @@
                 {
                     "coordinateSystems": [
                         {
+                        "name": "unskewed",
+                        "axes": [
+                                {
+                                    "type": "space",
+                                    "name": "z",
+                                    "unit": "micrometer",
+                                    "discrete": false
+                                },
+                                {
+                                    "type": "space",
+                                    "name": "y",
+                                    "unit": "micrometer",
+                                    "discrete": false
+                                },
+                                {
+                                    "type": "space",
+                                    "name": "x",
+                                    "unit": "micrometer",
+                                    "discrete": false
+                                }
+                            ]
+                        },
+                        {
                             "name": "skewed",
                             "axes": [
                                 {
@@ -86,63 +109,19 @@
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ],
+                    "coordinateTransformations":[
                         {
-                            "path": "scale2/image",
-                            "coordinateTransformations": [
-                                {
-                                    "type": "sequence",
-                                    "name": "scale2 to skewed",
-                                    "input": "scale2/image",
-                                    "output": "skewed",
-                                    "transformations": [
-                                        {
-                                            "scale": [
-                                                4.0,
-                                                1.298,
-                                                1.298
-                                            ],
-                                            "type": "scale"
-                                        },
-                                        {
-                                            "translation": [
-                                                1.5,
-                                                5882.68675,
-                                                44249.886750000005
-                                            ],
-                                            "type": "translation"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "path": "scale3/image",
-                            "coordinateTransformations": [
-                                {
-                                    "type": "sequence",
-                                    "name": "scale3 to skewed",
-                                    "input": "scale3/image",
-                                    "output": "skewed",
-                                    "transformations": [
-                                        {
-                                            "scale": [
-                                                8.0,
-                                                2.596,
-                                                2.596
-                                            ],
-                                            "type": "scale"
-                                        },
-                                        {
-                                            "translation": [
-                                                3.5,
-                                                5883.33575,
-                                                44250.53575
-                                            ],
-                                            "type": "translation"
-                                        }
-                                    ]
-                                }
+                            "name": "deskewing",
+                            "input": "skewed",
+                            "output": "unskewed",
+                            "type": "affine",
+                            "affine": [
+                                [1.0, 0.0, 0.0, 0.0],
+                                [0.0, 1.0, 0.83895016, 0.0],
+                                [0.0, 0.0, 1.0, 0.0],
+                                [0.0, 0.0, 0.0, 1.0]
                             ]
                         }
                     ]
