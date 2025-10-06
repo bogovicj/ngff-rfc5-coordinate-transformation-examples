@@ -1,408 +1,278 @@
 {
-    "attributes": {
-        "ome": {
-            "version": "0.5",
-            "multiscales": [
-                {
-                    "coordinateSystems": [
-                        {
-                        "name": "unskewed",
-                        "axes": [
-                                {
-                                    "type": "space",
-                                    "name": "z",
-                                    "unit": "micrometer",
-                                    "discrete": false
-                                },
-                                {
-                                    "type": "space",
-                                    "name": "y",
-                                    "unit": "micrometer",
-                                    "discrete": false
-                                },
-                                {
-                                    "type": "space",
-                                    "name": "x",
-                                    "unit": "micrometer",
-                                    "discrete": false
-                                }
-                            ]
-                        },
-                        {
-                            "name": "skewed",
-                            "axes": [
-                                {
-                                    "type": "space",
-                                    "name": "z",
-                                    "unit": "micrometer"
-                                },
-                                {
-                                    "type": "space",
-                                    "name": "y",
-                                    "unit": "micrometer"
-                                },
-                                {
-                                    "type": "space",
-                                    "name": "x",
-                                    "unit": "micrometer"
-                                }
-                            ]
-                        }
-                    ],
-                    "datasets": [
-                        {
-                            "path": "scale0/image",
-                            "coordinateTransformations": [
-                                {
-                                    "sequence": {
-                                        "name": "scale0 to skewed",
-                                        "type": "sequence",
-                                        "input": "scale0/image",
-                                        "output": "skewed",
-                                        "transformations": [
-                                            {
-                                                "type": "scale",
-                                                "scale": [
-                                                    1.0,
-                                                    0.3245,
-                                                    0.3245
-                                                ]
-                                            },
-                                            {
-                                                "type": "translation",
-                                                "translation": [
-                                                    0.0,
-                                                    5882.2,
-                                                    44249.4
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "path": "scale1/image",
-                            "coordinateTransformations": [
-                                {
-                                    "type": "sequence",
-                                    "name": "scale1 to skewed",
-                                    "input": "scale1/image",
-                                    "output": "skewed",
-                                    "transformations": [
-                                        {
-                                            "scale": [
-                                                2.0,
-                                                0.649,
-                                                0.649
-                                            ],
-                                            "type": "scale"
-                                        },
-                                        {
-                                            "translation": [
-                                                0.5,
-                                                5882.36225,
-                                                44249.56225
-                                            ],
-                                            "type": "translation"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "coordinateTransformations":[
-                        {
-                            "name": "deskewing",
-                            "input": "skewed",
-                            "output": "unskewed",
-                            "type": "affine",
-                            "affine": [
-                                [1.0, 0.0, 0.0, 0.0],
-                                [0.0, 1.0, 0.83895016, 0.0],
-                                [0.0, 0.0, 1.0, 0.0],
-                                [0.0, 0.0, 0.0, 1.0]
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "name": "image",
-            "type": "itkwasm_gaussian",
-            "metadata": {
-                "description": "Smoothed with a discrete gaussian filter to generate a scale space, ideal for intensity images. ITK-Wasm implementation is extremely portable and SIMD accelerated.",
-                "method": "itkwasm_downsample.downsample",
-                "version": "1.7.1"
-            },
-            "@type": "ngff:Image"
-        }
-    },
-    "zarr_format": 3,
-    "consolidated_metadata": {
-        "kind": "inline",
-        "must_understand": false,
-        "metadata": {
-            "scale0": {
-                "attributes": {
-                    "_ARRAY_DIMENSIONS": [
-                        "z",
-                        "y",
-                        "x"
-                    ]
-                },
-                "zarr_format": 3,
-                "consolidated_metadata": {
-                    "kind": "inline",
-                    "must_understand": false,
-                    "metadata": {}
-                },
-                "node_type": "group"
-            },
-            "scale1": {
-                "attributes": {
-                    "_ARRAY_DIMENSIONS": [
-                        "z",
-                        "y",
-                        "x"
-                    ]
-                },
-                "zarr_format": 3,
-                "consolidated_metadata": {
-                    "kind": "inline",
-                    "must_understand": false,
-                    "metadata": {}
-                },
-                "node_type": "group"
-            },
-            "scale2": {
-                "attributes": {
-                    "_ARRAY_DIMENSIONS": [
-                        "z",
-                        "y",
-                        "x"
-                    ]
-                },
-                "zarr_format": 3,
-                "consolidated_metadata": {
-                    "kind": "inline",
-                    "must_understand": false,
-                    "metadata": {}
-                },
-                "node_type": "group"
-            },
-            "scale3": {
-                "attributes": {
-                    "_ARRAY_DIMENSIONS": [
-                        "z",
-                        "y",
-                        "x"
-                    ]
-                },
-                "zarr_format": 3,
-                "consolidated_metadata": {
-                    "kind": "inline",
-                    "must_understand": false,
-                    "metadata": {}
-                },
-                "node_type": "group"
-            },
-            "scale0/image": {
-                "shape": [
-                    251,
-                    600,
-                    600
-                ],
-                "data_type": "uint16",
-                "chunk_grid": {
-                    "name": "regular",
-                    "configuration": {
-                        "chunk_shape": [
-                            32,
-                            150,
-                            150
-                        ]
-                    }
-                },
-                "chunk_key_encoding": {
-                    "name": "default",
-                    "configuration": {
-                        "separator": "/"
-                    }
-                },
-                "fill_value": 0,
-                "codecs": [
-                    {
-                        "name": "bytes",
-                        "configuration": {
-                            "endian": "little"
-                        }
-                    },
-                    {
-                        "name": "zstd",
-                        "configuration": {
-                            "level": 0,
-                            "checksum": false
-                        }
-                    }
-                ],
-                "attributes": {},
-                "dimension_names": [
-                    "z",
-                    "y",
-                    "x"
-                ],
-                "zarr_format": 3,
-                "node_type": "array",
-                "storage_transformers": []
-            },
-            "scale1/image": {
-                "shape": [
-                    125,
-                    300,
-                    300
-                ],
-                "data_type": "uint16",
-                "chunk_grid": {
-                    "name": "regular",
-                    "configuration": {
-                        "chunk_shape": [
-                            32,
-                            75,
-                            150
-                        ]
-                    }
-                },
-                "chunk_key_encoding": {
-                    "name": "default",
-                    "configuration": {
-                        "separator": "/"
-                    }
-                },
-                "fill_value": 0,
-                "codecs": [
-                    {
-                        "name": "bytes",
-                        "configuration": {
-                            "endian": "little"
-                        }
-                    },
-                    {
-                        "name": "zstd",
-                        "configuration": {
-                            "level": 0,
-                            "checksum": false
-                        }
-                    }
-                ],
-                "attributes": {},
-                "dimension_names": [
-                    "z",
-                    "y",
-                    "x"
-                ],
-                "zarr_format": 3,
-                "node_type": "array",
-                "storage_transformers": []
-            },
-            "scale2/image": {
-                "shape": [
-                    62,
-                    150,
-                    150
-                ],
-                "data_type": "uint16",
-                "chunk_grid": {
-                    "name": "regular",
-                    "configuration": {
-                        "chunk_shape": [
-                            31,
-                            75,
-                            75
-                        ]
-                    }
-                },
-                "chunk_key_encoding": {
-                    "name": "default",
-                    "configuration": {
-                        "separator": "/"
-                    }
-                },
-                "fill_value": 0,
-                "codecs": [
-                    {
-                        "name": "bytes",
-                        "configuration": {
-                            "endian": "little"
-                        }
-                    },
-                    {
-                        "name": "zstd",
-                        "configuration": {
-                            "level": 0,
-                            "checksum": false
-                        }
-                    }
-                ],
-                "attributes": {},
-                "dimension_names": [
-                    "z",
-                    "y",
-                    "x"
-                ],
-                "zarr_format": 3,
-                "node_type": "array",
-                "storage_transformers": []
-            },
-            "scale3/image": {
-                "shape": [
-                    31,
-                    75,
-                    75
-                ],
-                "data_type": "uint16",
-                "chunk_grid": {
-                    "name": "regular",
-                    "configuration": {
-                        "chunk_shape": [
-                            16,
-                            75,
-                            75
-                        ]
-                    }
-                },
-                "chunk_key_encoding": {
-                    "name": "default",
-                    "configuration": {
-                        "separator": "/"
-                    }
-                },
-                "fill_value": 0,
-                "codecs": [
-                    {
-                        "name": "bytes",
-                        "configuration": {
-                            "endian": "little"
-                        }
-                    },
-                    {
-                        "name": "zstd",
-                        "configuration": {
-                            "level": 0,
-                            "checksum": false
-                        }
-                    }
-                ],
-                "attributes": {},
-                "dimension_names": [
-                    "z",
-                    "y",
-                    "x"
-                ],
-                "zarr_format": 3,
-                "node_type": "array",
-                "storage_transformers": []
-            }
-        }
-    },
-    "node_type": "group"
+	"attributes": {
+		"ome": {
+			"version": "0.5",
+			"multiscales": [
+				{
+					"coordinateSystems": [
+						{
+						"name": "unskewed",
+						"axes": [
+							{
+								"type": "space",
+								"name": "z",
+								"unit": "micrometer",
+								"discrete": false
+							},
+							{
+								"type": "space",
+								"name": "y",
+								"unit": "micrometer",
+								"discrete": false
+							},
+							{
+								"type": "space",
+								"name": "x",
+								"unit": "micrometer",
+								"discrete": false
+							}
+							]
+						},
+						{
+							"name": "skewed",
+							"axes": [
+								{
+									"type": "space",
+									"name": "z",
+									"unit": "micrometer"
+								},
+								{
+									"type": "space",
+									"name": "y",
+									"unit": "micrometer"
+								},
+								{
+									"type": "space",
+									"name": "x",
+									"unit": "micrometer"
+								}
+							]
+						}
+					],
+					"datasets": [
+						{
+							"path": "scale0/image",
+							"coordinateTransformations": [
+								{
+									"sequence": {
+										"name": "scale0 to skewed",
+										"type": "sequence",
+										"input": "scale0/image",
+										"output": "skewed",
+										"transformations": [
+											{
+												"type": "scale",
+												"scale": [
+														1.0,
+														0.3245,
+														0.3245
+												]
+											},
+											{
+												"type": "translation",
+												"translation": [
+														0.0,
+														5882.2,
+														44249.4
+												]
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"path": "scale1/image",
+							"coordinateTransformations": [
+								{
+									"type": "sequence",
+									"name": "scale1 to skewed",
+									"input": "scale1/image",
+									"output": "skewed",
+									"transformations": [
+										{
+											"scale": [
+												2.0,
+												0.649,
+												0.649
+											],
+											"type": "scale"
+										},
+										{
+											"translation": [
+												0.5,
+												5882.36225,
+												44249.56225
+											],
+											"type": "translation"
+										}
+									]
+								}
+							]
+						}
+					],
+					"coordinateTransformations":[
+							{
+									"name": "deskewing",
+									"input": "skewed",
+									"output": "unskewed",
+									"type": "affine",
+									"affine": [
+											[1.0, 0.0, 0.0, 0.0],
+											[0.0, 1.0, 0.83895016, 0.0],
+											[0.0, 0.0, 1.0, 0.0],
+											[0.0, 0.0, 0.0, 1.0]
+									]
+							}
+					]
+				}
+			],
+			"name": "image",
+			"type": "itkwasm_gaussian",
+			"metadata": {
+					"description": "Smoothed with a discrete gaussian filter to generate a scale space, ideal for intensity images. ITK-Wasm implementation is extremely portable and SIMD accelerated.",
+					"method": "itkwasm_downsample.downsample",
+					"version": "1.7.1"
+			},
+			"@type": "ngff:Image"
+		}
+	},
+	"zarr_format": 3,
+	"consolidated_metadata": {
+		"kind": "inline",
+		"must_understand": false,
+		"metadata": {
+			"scale0": {
+				"attributes": {
+					"_ARRAY_DIMENSIONS": [
+						"z",
+						"y",
+						"x"
+					]
+				},
+				"zarr_format": 3,
+				"consolidated_metadata": {
+					"kind": "inline",
+					"must_understand": false,
+					"metadata": {}
+				},
+				"node_type": "group"
+			},
+			"scale1": {
+				"attributes": {
+					"_ARRAY_DIMENSIONS": [
+						"z",
+						"y",
+						"x"
+						]
+					},
+					"zarr_format": 3,
+					"consolidated_metadata": {
+						"kind": "inline",
+						"must_understand": false,
+						"metadata": {}
+					},
+					"node_type": "group"
+			},
+			"scale0/image": {
+					"shape": [
+						251,
+						600,
+						600
+					],
+					"data_type": "uint16",
+					"chunk_grid": {
+						"name": "regular",
+						"configuration": {
+							"chunk_shape": [
+								32,
+								150,
+								150
+							]
+						}
+					},
+					"chunk_key_encoding": {
+						"name": "default",
+						"configuration": {
+							"separator": "/"
+						}
+					},
+					"fill_value": 0,
+					"codecs": [
+							{
+								"name": "bytes",
+								"configuration": {
+									"endian": "little"
+								}
+							},
+							{
+								"name": "zstd",
+								"configuration": {
+									"level": 0,
+									"checksum": false
+								}
+							}
+					],
+					"attributes": {},
+					"dimension_names": [
+						"z",
+						"y",
+						"x"
+					],
+					"zarr_format": 3,
+					"node_type": "array",
+					"storage_transformers": []
+			},
+			"scale1/image": {
+				"shape": [
+					125,
+					300,
+					300
+				],
+				"data_type": "uint16",
+				"chunk_grid": {
+					"name": "regular",
+					"configuration": {
+						"chunk_shape": [
+							32,
+							75,
+							150
+						]
+					}
+				},
+				"chunk_key_encoding": {
+					"name": "default",
+					"configuration": {
+						"separator": "/"
+					}
+				},
+				"fill_value": 0,
+				"codecs": [
+					{
+						"name": "bytes",
+						"configuration": {
+							"endian": "little"
+						}
+					},
+					{
+						"name": "zstd",
+						"configuration": {
+							"level": 0,
+							"checksum": false
+						}
+					}
+				],
+				"attributes": {},
+				"dimension_names": [
+					"z",
+					"y",
+					"x"
+				],
+				"zarr_format": 3,
+				"node_type": "array",
+				"storage_transformers": []
+			}
+		}
+	},
+	"node_type": "group"
 }
