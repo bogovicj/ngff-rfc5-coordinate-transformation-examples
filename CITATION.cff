@@ -7,7 +7,7 @@ abstract: "This dataset contains examples of coordinate transformations for the 
 authors:
   - given-names: John
     family-names: Bogovic
-    affiliation: HHMI Janelia
+    affiliation: Janelia Research Campus, Howard Hughes Medical Institute
     orcid: "https://orcid.org/0000-0002-4829-9457"
   - given-names: Johannes
     family-names: Soltwedel
