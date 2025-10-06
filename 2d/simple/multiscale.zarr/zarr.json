@@ -34,16 +34,17 @@
                   "type": "sequence",
                   "output": "physical",
                   "input": "s0",
+                  "name": "scale0_to_physical",
                   "transformations": [
                     {
                       "type": "scale",
-                      "scale": [
-                        3,
-                        2
-                      ]
+                      "scale": [1, 1]
+                    },
+                    {
+                      "type": "translation",
+                      "translation": [0, 0]
                     }
-                  ],
-                  "name": "transform-name"
+                  ]
                 }
               ]
             },
@@ -54,24 +55,17 @@
                   "type": "sequence",
                   "output": "physical",
                   "input": "s1",
+                  "name": "scale1_to_physical",
                   "transformations": [
                     {
                       "type": "scale",
-                      "scale": [
-                        6,
-                        4
-                      ]
+                      "scale": [2, 2]
                     },
                     {
                       "type": "translation",
-                      "translation": [
-                        1.5,
-                        1
-                      ],
-                      "name": ""
+                      "translation": [0.7071, 0.7071]
                     }
-                  ],
-                  "name": "transform-name"
+                  ]
                 }
               ]
             },
@@ -82,24 +76,17 @@
                   "type": "sequence",
                   "output": "physical",
                   "input": "s2",
+                  "name": "scale2_to_physical",
                   "transformations": [
                     {
                       "type": "scale",
-                      "scale": [
-                        12,
-                        8
-                      ]
+                      "scale": [4, 4]
                     },
                     {
                       "type": "translation",
-                      "translation": [
-                        4.5,
-                        3
-                      ],
-                      "name": ""
+                      "translation": [2.1213, 2.1213]
                     }
-                  ],
-                  "name": "transform-name"
+                  ]
                 }
               ]
             }

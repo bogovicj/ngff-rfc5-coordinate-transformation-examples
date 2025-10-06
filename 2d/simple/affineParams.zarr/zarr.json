@@ -9,6 +9,23 @@
           "name": "multiscales",
           "coordinateSystems": [
             {
+              "name": "sheared",
+              "axes": [
+                {
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
+                }
+              ]
+            },
+            {
               "name": "physical",
               "axes": [
                 {
@@ -31,12 +48,21 @@
               "path": "array",
               "coordinateTransformations": [
                 {
-                  "type": "affine",
+                  "type": "scale",
                   "output": "physical",
-                  "path": "affineParams",
-                  "name": "transform-name"
+                  "input": "array",
+                  "name": "array-to-physical"
                 }
               ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "affine",
+              "input": "physical",
+              "output": "sheared",
+              "path": "affineParams",
+              "name": "shearing-transform"
             }
           ]
         }

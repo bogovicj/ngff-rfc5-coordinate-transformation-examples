@@ -31,11 +31,22 @@
               "path": "array",
               "coordinateTransformations": [
                 {
-                  "type": "translation",
-                  "output": "physical",
-                  "path": "translationParams",
+                  "type": "sequence",
+                  "name": "array-to-physical",
                   "input": "array",
-                  "name": "transform-name"
+                  "ouput": "path",
+                  "transformations": [
+                    {
+                      "type": "scale",
+                      "path": "scaleParams",
+                      "name": "scale-transform"
+                    },
+                    {
+                      "type": "translation",
+                      "path": "translationParams",
+                      "name": "translation-transform"
+                    }
+                  ]
                 }
               ]
             }
