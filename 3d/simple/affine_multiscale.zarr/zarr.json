@@ -9,6 +9,29 @@
           "name": "multiscales",
           "coordinateSystems": [
             {
+              "name": "sheared",
+              "axes": [
+                {
+                  "type": "space",
+                  "name": "z",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
+                }
+              ]
+            },
+            {
               "name": "physical",
               "axes": [
                 {
@@ -37,29 +60,27 @@
               "path": "s0",
               "coordinateTransformations": [
                 {
-                  "type": "affine",
+                  "type": "sequence",
                   "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      4,
-                      0,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      3,
-                      0,
-                      0
-                    ],
-                    [
-                      0,
-                      0,
-                      2,
-                      0
-                    ]
+                  "input": "s0",
+                  "name": "s0 to physical",
+                  "sequence": [
+                    {
+                      "type": "scale",
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    {
+                      "type": "translation",
+                      "translation": [
+                        0,
+                        0,
+                        0
+                      ]
+                    }
                   ]
                 }
               ]
@@ -68,29 +89,27 @@
               "path": "s1",
               "coordinateTransformations": [
                 {
-                  "type": "affine",
+                  "type": "sequence",
                   "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      8,
-                      0,
-                      0,
-                      2
-                    ],
-                    [
-                      0,
-                      6,
-                      0,
-                      1.5
-                    ],
-                    [
-                      0,
-                      0,
-                      4,
-                      1
-                    ]
+                  "input": "s1",
+                  "name": "s1 to physical",
+                  "sequence": [
+                    {
+                      "type": "scale",
+                      "scale": [
+                        2.0,
+                        2.0,
+                        2.0
+                      ]
+                    },
+                    {
+                      "type": "translation",
+                      "translation": [
+                        0.86602,
+                        0.86602,
+                        0.86602
+                      ]
+                    }
                   ]
                 }
               ]
@@ -99,31 +118,57 @@
               "path": "s2",
               "coordinateTransformations": [
                 {
-                  "type": "affine",
+                  "type": "sequence",
                   "output": "physical",
-                  "input": "",
-                  "name": "transform-name",
-                  "affine": [
-                    [
-                      16,
-                      0,
-                      0,
-                      6
-                    ],
-                    [
-                      0,
-                      12,
-                      0,
-                      4.5
-                    ],
-                    [
-                      0,
-                      0,
-                      8,
-                      3
-                    ]
+                  "input": "s2",
+                  "name": "s2 to physical",
+                  "sequence": [
+                    {
+                      "type": "scale",
+                      "scale": [
+                        4.0,
+                        4.0,
+                        4.0
+                      ]
+                    },
+                    {
+                      "type": "translation",
+                      "translation": [
+                        2.59808,
+                        2.59808,
+                        2.59808
+                      ]
+                    }
                   ]
                 }
+              ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "affine",
+              "output": "sheared",
+              "input": "physical",
+              "name": "physical-to-sheared",
+              "affine": [
+                [
+                  4,
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  3,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  2,
+                  0
+                ]
               ]
             }
           ]
