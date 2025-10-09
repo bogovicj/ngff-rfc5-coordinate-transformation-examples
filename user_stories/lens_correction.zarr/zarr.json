@@ -7,8 +7,8 @@
       "coordinateTransformations": [
         {
           "type": "byDimension",
-          "input": "corrected",
-          "output": "raw",
+          "input": "image",
+          "output": "corrected",
           "transformations": [
             {
               "type": "displacements",
@@ -38,29 +38,6 @@
         }
       ],
       "coordinateSystems": [
-        {
-          "name": "raw",
-          "axes": [
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "nanometer",
-              "discrete": false
-            }
-          ]
-        },
         {
           "name": "corrected",
           "axes": [
