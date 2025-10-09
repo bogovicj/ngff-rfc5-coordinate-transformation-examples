@@ -9,7 +9,7 @@
           "name": "multiscales",
           "coordinateSystems": [
             {
-              "name": "physical",
+              "name": "displaced",
               "axes": [
                 {
                   "type": "space",
@@ -32,7 +32,7 @@
               ]
             },
             {
-              "name": "0",
+              "name": "physical",
               "axes": [
                 {
                   "type": "array",
@@ -57,18 +57,27 @@
               "path": "0",
               "coordinateTransformations": [
                 {
-                  "type": "inverseOf",
-                  "output": "physical",
-                  "input": "0",
-                  "transform": {
-                    "type": "coordinates",
-                    "path": "coordinatesField",
-                    "interpolation": "linear",
-                    "name": "inverse-cfield"
-                  },
-                  "name": "tform-name"
+                  "type": "scale",
+                  "output": "0",
+                  "input": "physical",
+                  "scale": [0.5, 0.5, 0.5],
+                  "name": "array-to-physical"
                 }
               ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "inverseOf",
+              "output": "displaced",
+              "input": "physical",
+              "transform": {
+                "type": "coordinates",
+                "path": "coordinatesField",
+                "interpolation": "linear",
+                "name": "inverse-cfield"
+              },
+              "name": "tform-name"
             }
           ]
         }
