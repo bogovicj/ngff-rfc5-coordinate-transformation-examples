@@ -49,44 +49,52 @@
           ],
           "datasets": [
             {
-              "path": "array",
+              "path": "0",
               "coordinateTransformations": [
                 {
-                  "type": "byDimension",
-                  "output": "physical",
-                  "input": "array",
-                  "transformations": [
-                    {
-                      "type": "scale",
-                      "output": [
-                        "x",
-                        "y"
-                      ],
-                      "input": [
-                        "dim_0",
-                        "dim_1"
-                      ],
-                      "scale": [
-                        3,
-                        2
-                      ]
-                    },
-                    {
-                      "type": "translation",
-                      "output": [
-                        "z"
-                      ],
-                      "input": [
-                        "dim_2"
-                      ],
-                      "translation": [
-                        10
-                      ]
-                    }
-                  ],
-                  "name": "transform-name"
+                  "type": "identity",
+                  "input": "0",
+                  "output": "array"
                 }
               ]
+              
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "byDimension",
+              "output": "physical",
+              "input": "array",
+              "transformations": [
+                {
+                  "type": "scale",
+                  "output": [
+                    "x",
+                    "y"
+                  ],
+                  "input": [
+                    "dim_0",
+                    "dim_1"
+                  ],
+                  "scale": [
+                    3,
+                    2
+                  ]
+                },
+                {
+                  "type": "translation",
+                  "output": [
+                    "z"
+                  ],
+                  "input": [
+                    "dim_2"
+                  ],
+                  "translation": [
+                    10
+                  ]
+                }
+              ],
+              "name": "transform-name"
             }
           ]
         }

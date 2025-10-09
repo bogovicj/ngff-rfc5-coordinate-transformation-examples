@@ -49,20 +49,28 @@
           ],
           "datasets": [
             {
-              "path": "array",
+              "path": "0",
               "coordinateTransformations": [
                 {
-                  "type": "mapAxis",
-                  "output": "physical",
-                  "input": "array",
-                  "name": "transform-name",
-                  "mapAxis": {
-                    "x": "dim_2",
-                    "y": "dim_1",
-                    "z": "dim_0"
-                  }
+                  "type": "identity",
+                  "output": "array",
+                  "input": "0"
                 }
               ]
+    
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "mapAxis",
+              "output": "physical",
+              "input": "array",
+              "name": "transform-name",
+              "mapAxis": {
+                "x": "dim_2",
+                "y": "dim_1",
+                "z": "dim_0"
+              }
             }
           ]
         }
