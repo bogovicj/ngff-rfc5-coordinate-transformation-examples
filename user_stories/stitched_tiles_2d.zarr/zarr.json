@@ -8,7 +8,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_0_mm",
+          "input": "tile_0",
           "translation": [
             0,
             0
@@ -18,7 +18,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_1_mm",
+          "input": "tile_1",
           "translation": [
             0,
             348
@@ -28,7 +28,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_2_mm",
+          "input": "tile_2",
           "translation": [
             276,
             0
@@ -38,7 +38,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_3_mm",
+          "input": "tile_3",
           "translation": [
             276,
             348
@@ -49,74 +49,6 @@
       "coordinateSystems": [
         {
           "name": "world",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_0_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_1_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_2_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_3_mm",
           "axes": [
             {
               "type": "space",
