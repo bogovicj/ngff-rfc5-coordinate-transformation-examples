@@ -8,7 +8,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_0_mm",
+          "input": "tile_0",
           "translation": [
             0,
             0,
@@ -19,7 +19,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_1_mm",
+          "input": "tile_1",
           "translation": [
             0,
             0,
@@ -30,7 +30,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_2_mm",
+          "input": "tile_2",
           "translation": [
             0,
             102,
@@ -41,7 +41,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_3_mm",
+          "input": "tile_3",
           "translation": [
             0,
             102,
@@ -52,7 +52,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_4_mm",
+          "input": "tile_4",
           "translation": [
             3,
             0,
@@ -63,7 +63,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_5_mm",
+          "input": "tile_5",
           "translation": [
             3,
             0,
@@ -74,7 +74,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_6_mm",
+          "input": "tile_6",
           "translation": [
             3,
             102,
@@ -85,7 +85,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_7_mm",
+          "input": "tile_7",
           "translation": [
             3,
             102,
@@ -97,190 +97,6 @@
       "coordinateSystems": [
         {
           "name": "world",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_0_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_1_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_2_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_3_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_4_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_5_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_6_mm",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "tile_7_mm",
           "axes": [
             {
               "type": "space",
