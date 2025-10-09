@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "ngff rfc5 coordinate transformation examples"
-version: 0.6-dev1-rev1
+version: 0.6.dev1-rev1
 license: "MIT"
 type: dataset
 abstract: "This dataset contains examples of coordinate transformations for the [NGFF RFC5 specification proposal](https://ngff.openmicroscopy.org/rfc/5/index.html)."
