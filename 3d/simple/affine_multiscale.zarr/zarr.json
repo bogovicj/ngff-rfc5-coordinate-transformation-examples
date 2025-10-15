@@ -64,7 +64,7 @@
                   "output": "physical",
                   "input": "s0",
                   "name": "s0 to physical",
-                  "sequence": [
+                  "transformations": [
                     {
                       "type": "scale",
                       "scale": [
@@ -93,7 +93,7 @@
                   "output": "physical",
                   "input": "s1",
                   "name": "s1 to physical",
-                  "sequence": [
+                  "transformations": [
                     {
                       "type": "scale",
                       "scale": [
@@ -122,7 +122,7 @@
                   "output": "physical",
                   "input": "s2",
                   "name": "s2 to physical",
-                  "sequence": [
+                  "transformations": [
                     {
                       "type": "scale",
                       "scale": [
