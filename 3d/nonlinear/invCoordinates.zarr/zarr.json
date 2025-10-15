@@ -58,8 +58,8 @@
               "coordinateTransformations": [
                 {
                   "type": "scale",
-                  "output": "0",
-                  "input": "physical",
+                  "output": "physical",
+                  "input": "0",
                   "scale": [0.5, 0.5, 0.5],
                   "name": "array-to-physical"
                 }
