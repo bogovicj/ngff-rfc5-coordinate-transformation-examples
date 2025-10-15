@@ -43,6 +43,11 @@
                   "type": "array",
                   "name": "dim_1",
                   "discrete": true
+                },
+                {
+                  "type": "array",
+                  "name": "dim_2",
+                  "discrete": true
                 }
               ]
             }
@@ -66,11 +71,7 @@
               "output": "physical",
               "input": "array",
               "name": "transform-name",
-              "mapAxis": {
-                "x": "dim_2",
-                "y": "dim_1",
-                "z": "dim_0"
-              }
+              "mapAxis": [2, 1, 0]
             }
           ]
         }

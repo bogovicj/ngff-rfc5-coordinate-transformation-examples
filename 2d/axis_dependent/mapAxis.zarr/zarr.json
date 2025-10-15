@@ -61,10 +61,7 @@
               "output": "physical",
               "input": "array_coordinates",
               "name": "transform-name",
-              "mapAxis": {
-                "x": "dim_0",
-                "y": "dim_1"
-              }
+              "mapAxis": [1, 0]
             }
           ]
         }
