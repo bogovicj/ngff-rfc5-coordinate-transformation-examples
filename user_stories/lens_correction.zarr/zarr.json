@@ -15,21 +15,21 @@
               "name": "lens correction",
               "path": "coordinateTransformations/lensCorrection",
               "interpolation": "linear",
-              "input": [
+              "input_axes": [
                 "y",
                 "x"
               ],
-              "output": [
+              "output_axes": [
                 "y",
                 "x"
               ]
             },
             {
               "type": "identity",
-              "input": [
+              "input_axes": [
                 "z"
               ],
-              "output": [
+              "output_axes": [
                 "z"
               ]
             }

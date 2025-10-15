@@ -52,10 +52,10 @@
                   "transforms": [
                     {
                       "type": "scale",
-                      "output": [
+                      "output_axes": [
                         "x"
                       ],
-                      "input": [
+                      "input_axes": [
                         "dim_1"
                       ],
                       "scale": [
@@ -64,10 +64,10 @@
                     },
                     {
                       "type": "translation",
-                      "output": [
+                      "output_axes": [
                         "y"
                       ],
-                      "input": [
+                      "input_axes": [
                         "dim_0"
                       ],
                       "translation": [

@@ -68,11 +68,11 @@
               "transformations": [
                 {
                   "type": "scale",
-                  "output": [
+                  "output_axes": [
                     "x",
                     "y"
                   ],
-                  "input": [
+                  "input_axes": [
                     "dim_0",
                     "dim_1"
                   ],
@@ -83,10 +83,10 @@
                 },
                 {
                   "type": "translation",
-                  "output": [
+                  "output_axes": [
                     "z"
                   ],
-                  "input": [
+                  "input_axes": [
                     "dim_2"
                   ],
                   "translation": [
