@@ -51,7 +51,8 @@
                   "type": "scale",
                   "output": "physical",
                   "input": "array",
-                  "name": "array2physical"
+                  "name": "array2physical",
+                  "path": "rotationParams"
                 }
               ]
             }

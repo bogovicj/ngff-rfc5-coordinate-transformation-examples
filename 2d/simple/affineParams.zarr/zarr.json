@@ -51,7 +51,8 @@
                   "type": "scale",
                   "output": "physical",
                   "input": "array",
-                  "name": "array-to-physical"
+                  "name": "array-to-physical",
+                  "scale": [0.5, 0.5]
                 }
               ]
             }
