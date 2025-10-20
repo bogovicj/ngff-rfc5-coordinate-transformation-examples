@@ -60,7 +60,7 @@
               "type": "inverseOf",
               "output": "physical",
               "input": "scaled",
-              "transform": {
+              "transformation": {
                 "type": "coordinates",
                 "path": "coordinatesField",
                 "interpolation": "linear",

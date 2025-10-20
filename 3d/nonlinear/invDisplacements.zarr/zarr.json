@@ -72,7 +72,7 @@
               "type": "inverseOf",
               "output": "displaced",
               "input": "physical",
-              "transform": {
+              "transformation": {
                 "type": "displacements",
                 "path": "displacementField",
                 "interpolation": "linear",

@@ -71,7 +71,7 @@
               "type": "inverseOf",
               "output": "displaced",
               "input": "physical",
-              "transform": {
+              "transformation": {
                 "type": "coordinates",
                 "path": "coordinatesField",
                 "interpolation": "linear",
