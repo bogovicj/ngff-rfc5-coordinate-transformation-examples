@@ -34,7 +34,7 @@
                   "type": "sequence",
                   "name": "array-to-physical",
                   "input": "array",
-                  "ouput": "path",
+                  "output": "path",
                   "transformations": [
                     {
                       "type": "scale",
