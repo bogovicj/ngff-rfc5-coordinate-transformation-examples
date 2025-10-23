@@ -43,6 +43,7 @@
                   "name": "tile_4 to physical",
                   "scale": [
                     1,
+                    1,
                     1
                   ]
                 }
