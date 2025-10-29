@@ -54,31 +54,29 @@
 							"path": "scale0",
 							"coordinateTransformations": [
 								{
-									"sequence": {
-										"name": "scale0 to skewed",
-										"type": "sequence",
-										"input": "scale0",
-										"output": "skewed",
-										"transformations": [
-											{
-												"type": "scale",
-												"scale": [
-													1.0,
-													0.3245,
-													0.3245
-												]
-											},
-											{
-												"type": "translation",
-												"translation": [
-													0.0,
-													0.16225,
-													0.16225
-												]
-											}
-										]
-									}
-								}
+                                    "name": "scale0 to physical",
+                                    "type": "sequence",
+                                    "input": "scale0",
+                                    "output": "physical",
+                                    "transformations": [
+                                        {
+                                            "type": "scale",
+                                            "scale": [
+                                                1.0,
+                                                0.3245,
+                                                0.3245
+                                            ]
+                                        },
+                                        {
+                                            "type": "translation",
+                                            "translation": [
+                                                0.0,
+                                                0.16225,
+                                                0.16225
+                                            ]
+                                        }
+                                    ]
+                                }
 							]
 						},
 						{
