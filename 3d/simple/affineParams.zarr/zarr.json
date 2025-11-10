@@ -63,7 +63,7 @@
                   "type": "scale",
                   "scale": [1.0, 0.5, 0.5],
                   "output": "physical",
-                  "path": "affineParams",
+                  "input": "array",
                   "name": "image-to-physical"
                 }
               ]

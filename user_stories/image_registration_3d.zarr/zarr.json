@@ -73,7 +73,6 @@
               {
                 "type": "displacements",
                 "path": "coordinateTransformations/invdfield",
-                "input": "FCWB",
                 "interpolation": "linear",
                 "name": ""
               }
