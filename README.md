@@ -10,7 +10,7 @@ array's native coordinate system, which is duplicated.
 
 ### mapAxis.zarr
 
-An example using the `rotation` transformation type. Note that the rotation is about the origin.
+An example using the `mapAxis` transformation type.
 
 ### byDimension.zarr
 
