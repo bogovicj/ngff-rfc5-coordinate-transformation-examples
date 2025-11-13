@@ -7,8 +7,8 @@
       "coordinateTransformations": [
         {
           "type": "sequence",
-          "input": "VOI-03.ome.zarr",
-          "output": "overview.ome.zarr",
+          "input": {"path": "VOI-03.ome.zarr", "name": "physical"},
+          "output": {"path": "overview.ome.zarr", "name": "physical"},
           "name": "VOI-03 registration",
           "transformations": [
             { "type": "scale", "scale": [1, 1, 1] },
@@ -28,8 +28,8 @@
         },
         {
           "type": "sequence",
-          "input": "VOI-02.ome.zarr",
-          "output": "overview.ome.zarr",
+          "input": {"path": "VOI-02.ome.zarr", "name": "physical"},
+          "output": {"path": "overview.ome.zarr", "name": "physical"},
           "name": "VOI-02 registration",
           "transformations": [
             { "type": "scale", "scale": [1, 1, 1] },
@@ -49,8 +49,8 @@
         },
         {
           "type": "sequence",
-          "input": "VOI-01.ome.zarr",
-          "output": "overview.ome.zarr",
+          "input": {"path": "VOI-01.ome.zarr", "name": "physical"},
+          "output": {"path": "overview.ome.zarr", "name": "physical"},
           "name": "VOI-01 registration",
           "transformations": [
             { "type": "scale", "scale": [1, 1, 1] },

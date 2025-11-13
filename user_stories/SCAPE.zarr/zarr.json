@@ -8,7 +8,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "stack",
+          "input": {"path": "stack", "name": "physical"},
           "translation": [
             5882.2,
             44249.4
