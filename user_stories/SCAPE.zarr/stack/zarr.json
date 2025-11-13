@@ -1,0 +1,139 @@
+{
+	"attributes": {
+		"ome": {
+			"version": "0.6dev2",
+			"multiscales": [
+				{
+					"coordinateSystems": [
+						{
+						"name": "unskewed",
+						"axes": [
+							{
+								"type": "space",
+								"name": "z",
+								"unit": "micrometer",
+								"discrete": false
+							},
+							{
+								"type": "space",
+								"name": "y",
+								"unit": "micrometer",
+								"discrete": false
+							},
+							{
+								"type": "space",
+								"name": "x",
+								"unit": "micrometer",
+								"discrete": false
+							}
+							]
+						},
+						{
+							"name": "physical",
+							"axes": [
+								{
+									"type": "space",
+									"name": "z",
+									"unit": "micrometer"
+								},
+								{
+									"type": "space",
+									"name": "y",
+									"unit": "micrometer"
+								},
+								{
+									"type": "space",
+									"name": "x",
+									"unit": "micrometer"
+								}
+							]
+						}
+					],
+					"datasets": [
+						{
+							"path": "scale0",
+							"coordinateTransformations": [
+								{
+                                    "name": "scale0 to physical",
+                                    "type": "sequence",
+                                    "input": "scale0",
+                                    "output": "physical",
+                                    "transformations": [
+                                        {
+                                            "type": "scale",
+                                            "scale": [
+                                                1.0,
+                                                0.3245,
+                                                0.3245
+                                            ]
+                                        },
+                                        {
+                                            "type": "translation",
+                                            "translation": [
+                                                0.0,
+                                                0.16225,
+                                                0.16225
+                                            ]
+                                        }
+                                    ]
+                                }
+							]
+						},
+						{
+							"path": "scale1",
+							"coordinateTransformations": [
+								{
+									"type": "sequence",
+									"name": "scale1 to physical",
+									"input": "scale1",
+									"output": "physical",
+									"transformations": [
+										{
+											"scale": [
+												2.0,
+												0.649,
+												0.649
+											],
+											"type": "scale"
+										},
+										{
+											"translation": [
+												0.5,
+												0.16225,
+												0.16225
+											],
+											"type": "translation"
+										}
+									]
+								}
+							]
+						}
+					],
+					"coordinateTransformations":[
+						{
+							"name": "deskewing",
+							"input": "physical",
+							"output": "unskewed",
+							"type": "affine",
+							"affine": [
+								[1.0, 0.0, 0.0, 0.0],
+								[0.0, 1.0, 0.83895016, 0.0],
+								[0.0, 0.0, 1.0, 0.0]
+							]
+						}
+					]
+				}
+			],
+			"name": "image",
+			"type": "itkwasm_gaussian",
+			"metadata": {
+					"description": "Smoothed with a discrete gaussian filter to generate a scale space, ideal for intensity images. ITK-Wasm implementation is extremely portable and SIMD accelerated.",
+					"method": "itkwasm_downsample.downsample",
+					"version": "1.7.1"
+			},
+			"@type": "ngff:Image"
+		}
+	},
+	"zarr_format": 3,
+	"node_type": "group"
+}

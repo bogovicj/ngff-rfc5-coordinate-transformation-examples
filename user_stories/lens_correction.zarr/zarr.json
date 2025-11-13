@@ -3,33 +3,33 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6dev2",
       "coordinateTransformations": [
         {
           "type": "byDimension",
-          "input": "corrected",
-          "output": "raw",
+          "input": "image",
+          "output": "corrected",
           "transformations": [
             {
               "type": "displacements",
               "name": "lens correction",
               "path": "coordinateTransformations/lensCorrection",
               "interpolation": "linear",
-              "input": [
+              "input_axes": [
                 "y",
                 "x"
               ],
-              "output": [
+              "output_axes": [
                 "y",
                 "x"
               ]
             },
             {
               "type": "identity",
-              "input": [
+              "input_axes": [
                 "z"
               ],
-              "output": [
+              "output_axes": [
                 "z"
               ]
             }
@@ -38,29 +38,6 @@
         }
       ],
       "coordinateSystems": [
-        {
-          "name": "raw",
-          "axes": [
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "nanometer",
-              "discrete": false
-            }
-          ]
-        },
         {
           "name": "corrected",
           "axes": [

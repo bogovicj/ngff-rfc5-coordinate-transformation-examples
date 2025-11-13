@@ -9,7 +9,7 @@
           "name": "multiscales",
           "coordinateSystems": [
             {
-              "name": "tile_0_mm",
+              "name": "physical",
               "axes": [
                 {
                   "type": "space",
@@ -38,10 +38,11 @@
               "coordinateTransformations": [
                 {
                   "type": "scale",
-                  "output": "tile_0_mm",
+                  "output": "physical",
                   "input": "0",
                   "name": "tile_0 to physical",
                   "scale": [
+                    1,
                     1,
                     1
                   ]

@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6dev2",
       "multiscales": [
         {
           "name": "multiscales",
@@ -26,7 +26,7 @@
               ]
             },
             {
-              "name": "array",
+              "name": "array_coordinates",
               "axes": [
                 {
                   "type": "array",
@@ -52,10 +52,10 @@
                   "transforms": [
                     {
                       "type": "scale",
-                      "output": [
+                      "output_axes": [
                         "x"
                       ],
-                      "input": [
+                      "input_axes": [
                         "dim_1"
                       ],
                       "scale": [
@@ -64,10 +64,10 @@
                     },
                     {
                       "type": "translation",
-                      "output": [
+                      "output_axes": [
                         "y"
                       ],
-                      "input": [
+                      "input_axes": [
                         "dim_0"
                       ],
                       "translation": [

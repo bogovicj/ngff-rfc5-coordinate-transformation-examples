@@ -3,11 +3,28 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6dev2",
       "multiscales": [
         {
           "name": "multiscales",
           "coordinateSystems": [
+            {
+              "name": "sheared",
+              "axes": [
+                {
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
+                },
+                {
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
+                }
+              ]
+            },
             {
               "name": "physical",
               "axes": [
@@ -31,12 +48,22 @@
               "path": "array",
               "coordinateTransformations": [
                 {
-                  "type": "affine",
+                  "type": "scale",
                   "output": "physical",
-                  "path": "affineParams",
-                  "name": "transform-name"
+                  "input": "array",
+                  "name": "array-to-physical",
+                  "scale": [0.5, 0.5]
                 }
               ]
+            }
+          ],
+          "coordinateTransformations": [
+            {
+              "type": "affine",
+              "input": "physical",
+              "output": "sheared",
+              "path": "affineParams",
+              "name": "shearing-transform"
             }
           ]
         }

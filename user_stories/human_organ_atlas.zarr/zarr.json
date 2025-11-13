@@ -1,0 +1,75 @@
+{
+  "zarr_format": 3,
+  "node_type": "group",
+  "attributes": {
+    "ome": {
+      "version": "0.6dev2",
+      "coordinateTransformations": [
+        {
+          "type": "sequence",
+          "input": "VOI-03.ome.zarr",
+          "output": "overview.ome.zarr",
+          "name": "VOI-03 registration",
+          "transformations": [
+            { "type": "scale", "scale": [1, 1, 1] },
+            {
+              "type": "rotation",
+              "rotation": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [0, 0, 1]
+              ]
+            },
+            {
+              "type": "translation",
+              "translation": [0, 0, 0]
+            }
+          ]
+        },
+        {
+          "type": "sequence",
+          "input": "VOI-02.ome.zarr",
+          "output": "overview.ome.zarr",
+          "name": "VOI-02 registration",
+          "transformations": [
+            { "type": "scale", "scale": [1, 1, 1] },
+            {
+              "type": "rotation",
+              "rotation": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [0, 0, 1]
+              ]
+            },
+            {
+              "type": "translation",
+              "translation": [0, 0, 0]
+            }
+          ]
+        },
+        {
+          "type": "sequence",
+          "input": "VOI-01.ome.zarr",
+          "output": "overview.ome.zarr",
+          "name": "VOI-01 registration",
+          "transformations": [
+            { "type": "scale", "scale": [1, 1, 1] },
+            {
+              "type": "rotation",
+              "rotation": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [0, 0, 1]
+              ]
+            },
+            {
+              "type": "translation",
+              "translation": [0, 0, 0]
+            }
+          ]
+        }
+      ],
+      "coordinateSystems": []
+    }
+  }
+}
