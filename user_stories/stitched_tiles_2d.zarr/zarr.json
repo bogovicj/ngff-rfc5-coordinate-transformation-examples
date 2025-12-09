@@ -8,7 +8,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_0",
+          "input": {"path": "tile_0", "name": "physical"},
           "translation": [
             0,
             0
@@ -18,7 +18,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_1",
+          "input": {"path": "tile_1", "name": "physical"},
           "translation": [
             0,
             348
@@ -28,7 +28,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_2",
+          "input": {"path": "tile_2", "name": "physical"},
           "translation": [
             276,
             0
@@ -38,7 +38,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_3",
+          "input": {"path": "tile_3", "name": "physical"},
           "translation": [
             276,
             348

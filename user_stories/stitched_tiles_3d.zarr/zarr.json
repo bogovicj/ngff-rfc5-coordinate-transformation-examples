@@ -8,7 +8,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_0",
+          "input": {"path": "tile_0", "name": "physical"},
           "translation": [
             0,
             0,
@@ -19,7 +19,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_1",
+          "input": {"path": "tile_1", "name": "physical"},
           "translation": [
             0,
             0,
@@ -30,7 +30,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_2",
+          "input": {"path": "tile_2", "name": "physical"},
           "translation": [
             0,
             102,
@@ -41,7 +41,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_3",
+          "input": {"path": "tile_3", "name": "physical"},
           "translation": [
             0,
             102,
@@ -52,7 +52,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_4",
+          "input": {"path": "tile_4", "name": "physical"},
           "translation": [
             3,
             0,
@@ -63,7 +63,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_5",
+          "input": {"path": "tile_5", "name": "physical"},
           "translation": [
             3,
             0,
@@ -74,7 +74,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_6",
+          "input": {"path": "tile_6", "name": "physical"},
           "translation": [
             3,
             102,
@@ -85,7 +85,7 @@
         {
           "type": "translation",
           "output": "world",
-          "input": "tile_7",
+          "input": {"path": "tile_7", "name": "physical"},
           "translation": [
             3,
             102,

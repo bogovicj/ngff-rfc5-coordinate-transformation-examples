@@ -7,7 +7,7 @@
       "coordinateTransformations": [
         {
           "type": "byDimension",
-          "input": "image",
+          "input": {"path": "image", "name": "raw"},
           "output": "corrected",
           "transformations": [
             {

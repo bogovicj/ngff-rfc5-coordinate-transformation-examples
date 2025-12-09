@@ -7,7 +7,7 @@
       "coordinateTransformations": [
         {
           "type": "bijection",
-          "input": "JRC2018F",
+          "input": {"path": "JRC2018F", "name": "JRC2018F"},
           "output": "FCWB",
           "forward": {
             "type": "sequence",
