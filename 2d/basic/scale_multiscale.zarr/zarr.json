@@ -33,7 +33,7 @@
                 {
                   "type": "scale",
                   "output": "physical",
-                  "input": "",
+                  "input": "s0",
                   "name": "transform-name",
                   "scale": [
                     6.0,
@@ -48,7 +48,7 @@
                 {
                   "type": "scale",
                   "output": "physical",
-                  "input": "",
+                  "input": "s1",
                   "name": "transform-name",
                   "scale": [
                     12.0,
@@ -63,7 +63,7 @@
                 {
                   "type": "scale",
                   "output": "physical",
-                  "input": "",
+                  "input": "s2",
                   "name": "transform-name",
                   "scale": [
                     24.0,
