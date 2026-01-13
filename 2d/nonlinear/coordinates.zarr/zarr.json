@@ -57,16 +57,12 @@
           ],
           "coordinateTransformations": [
             {
-              "type": "inverseOf",
-              "output": "physical",
-              "input": "scaled",
-              "transformation": {
-                "type": "coordinates",
-                "path": "coordinatesField",
-                "interpolation": "linear",
-                "name": "inverse-cfield"
-              },
-              "name": "tform-name"
+              "type": "coordinates",
+              "output": "scaled",
+              "input": "physical",
+              "path": "coordinatesField",
+              "interpolation": "linear",
+              "name": "inverse-cfield"
             }
           ]
         }
