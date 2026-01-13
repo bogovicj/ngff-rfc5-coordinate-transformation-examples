@@ -39,7 +39,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s0",
                   "transformations": [
                     {
                       "type": "scale",
@@ -69,7 +69,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s1",
                   "transformations": [
                     {
                       "type": "scale",
@@ -99,7 +99,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s2",
                   "transformations": [
                     {
                       "type": "scale",
