@@ -69,7 +69,7 @@
           "coordinateTransformations": [
             {
               "type": "coordinates",
-              "output": "scaled",
+              "output": "displaced",
               "input": "physical",
               "path": "coordinatesField",
               "interpolation": "linear",
