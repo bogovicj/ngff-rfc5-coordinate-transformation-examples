@@ -69,16 +69,12 @@
           ],
           "coordinateTransformations": [
             {
-              "type": "inverseOf",
-              "output": "displaced",
-              "input": "physical",
-              "transformation": {
-                "type": "displacements",
-                "path": "displacementField",
-                "interpolation": "linear",
-                "name": "inverse-dfield"
-              },
-              "name": "tform-name"
+              "type": "displacements",
+              "output": "physical",
+              "input": "displaced",
+              "path": "displacementField",
+              "interpolation": "linear",
+              "name": "inverse-dfield"
             }
           ]
         }
