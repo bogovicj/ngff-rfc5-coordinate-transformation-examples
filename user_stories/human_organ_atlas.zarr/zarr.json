@@ -4,72 +4,74 @@
   "attributes": {
     "ome": {
       "version": "0.6.dev2",
-      "coordinateTransformations": [
-        {
-          "type": "sequence",
-          "input": {"path": "VOI-03.ome.zarr", "name": "physical"},
-          "output": {"path": "overview.ome.zarr", "name": "physical"},
-          "name": "VOI-03 registration",
-          "transformations": [
-            { "type": "scale", "scale": [1, 1, 1] },
-            {
-              "type": "rotation",
-              "rotation": [
-                [1, 0, 0],
-                [0, 1, 0],
-                [0, 0, 1]
-              ]
-            },
-            {
-              "type": "translation",
-              "translation": [0, 0, 0]
-            }
-          ]
-        },
-        {
-          "type": "sequence",
-          "input": {"path": "VOI-02.ome.zarr", "name": "physical"},
-          "output": {"path": "overview.ome.zarr", "name": "physical"},
-          "name": "VOI-02 registration",
-          "transformations": [
-            { "type": "scale", "scale": [1, 1, 1] },
-            {
-              "type": "rotation",
-              "rotation": [
-                [1, 0, 0],
-                [0, 1, 0],
-                [0, 0, 1]
-              ]
-            },
-            {
-              "type": "translation",
-              "translation": [0, 0, 0]
-            }
-          ]
-        },
-        {
-          "type": "sequence",
-          "input": {"path": "VOI-01.ome.zarr", "name": "physical"},
-          "output": {"path": "overview.ome.zarr", "name": "physical"},
-          "name": "VOI-01 registration",
-          "transformations": [
-            { "type": "scale", "scale": [1, 1, 1] },
-            {
-              "type": "rotation",
-              "rotation": [
-                [1, 0, 0],
-                [0, 1, 0],
-                [0, 0, 1]
-              ]
-            },
-            {
-              "type": "translation",
-              "translation": [0, 0, 0]
-            }
-          ]
-        }
-      ],
-      "coordinateSystems": []
+      "scene":{
+        "coordinateTransformations": [
+          {
+            "type": "sequence",
+            "input": {"path": "VOI-03.ome.zarr", "name": "physical"},
+            "output": {"path": "overview.ome.zarr", "name": "physical"},
+            "name": "VOI-03 registration",
+            "transformations": [
+              { "type": "scale", "scale": [1, 1, 1] },
+              {
+                "type": "rotation",
+                "rotation": [
+                  [1, 0, 0],
+                  [0, 1, 0],
+                  [0, 0, 1]
+                ]
+              },
+              {
+                "type": "translation",
+                "translation": [0, 0, 0]
+              }
+            ]
+          },
+          {
+            "type": "sequence",
+            "input": {"path": "VOI-02.ome.zarr", "name": "physical"},
+            "output": {"path": "overview.ome.zarr", "name": "physical"},
+            "name": "VOI-02 registration",
+            "transformations": [
+              { "type": "scale", "scale": [1, 1, 1] },
+              {
+                "type": "rotation",
+                "rotation": [
+                  [1, 0, 0],
+                  [0, 1, 0],
+                  [0, 0, 1]
+                ]
+              },
+              {
+                "type": "translation",
+                "translation": [0, 0, 0]
+              }
+            ]
+          },
+          {
+            "type": "sequence",
+            "input": {"path": "VOI-01.ome.zarr", "name": "physical"},
+            "output": {"path": "overview.ome.zarr", "name": "physical"},
+            "name": "VOI-01 registration",
+            "transformations": [
+              { "type": "scale", "scale": [1, 1, 1] },
+              {
+                "type": "rotation",
+                "rotation": [
+                  [1, 0, 0],
+                  [0, 1, 0],
+                  [0, 0, 1]
+                ]
+              },
+              {
+                "type": "translation",
+                "translation": [0, 0, 0]
+              }
+            ]
+          }
+        ],
+        "coordinateSystems": []
+      }
     }
   }
 }

@@ -4,64 +4,66 @@
   "attributes": {
     "ome": {
       "version": "0.6.dev2",
-      "coordinateTransformations": [
-        {
-          "type": "byDimension",
-          "input": {"path": "image", "name": "raw"},
-          "output": "corrected",
-          "transformations": [
-            {
-              "type": "displacements",
-              "name": "lens correction",
-              "path": "coordinateTransformations/lensCorrection",
-              "interpolation": "linear",
-              "input_axes": [
-                "y",
-                "x"
-              ],
-              "output_axes": [
-                "y",
-                "x"
-              ]
-            },
-            {
-              "type": "identity",
-              "input_axes": [
-                "z"
-              ],
-              "output_axes": [
-                "z"
-              ]
-            }
-          ],
-          "name": "lens correction 3d"
-        }
-      ],
-      "coordinateSystems": [
-        {
-          "name": "corrected",
-          "axes": [
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "nanometer",
-              "discrete": false
-            }
-          ]
-        }
-      ]
+      "scene": {
+        "coordinateTransformations": [
+          {
+            "type": "byDimension",
+            "input": {"path": "image", "name": "raw"},
+            "output": "corrected",
+            "transformations": [
+              {
+                "type": "displacements",
+                "name": "lens correction",
+                "path": "coordinateTransformations/lensCorrection",
+                "interpolation": "linear",
+                "input_axes": [
+                  "y",
+                  "x"
+                ],
+                "output_axes": [
+                  "y",
+                  "x"
+                ]
+              },
+              {
+                "type": "identity",
+                "input_axes": [
+                  "z"
+                ],
+                "output_axes": [
+                  "z"
+                ]
+              }
+            ],
+            "name": "lens correction 3d"
+          }
+        ],
+        "coordinateSystems": [
+          {
+            "name": "corrected",
+            "axes": [
+              {
+                "type": "space",
+                "name": "z",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "y",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "x",
+                "unit": "nanometer",
+                "discrete": false
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }
