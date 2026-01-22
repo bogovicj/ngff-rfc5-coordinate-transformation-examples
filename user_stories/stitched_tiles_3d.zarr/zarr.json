@@ -4,121 +4,123 @@
   "attributes": {
     "ome": {
       "version": "0.6.dev2",
-      "coordinateTransformations": [
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_0", "name": "physical"},
-          "translation": [
-            0,
-            0,
-            0
-          ],
-          "name": "tile_0_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_1", "name": "physical"},
-          "translation": [
-            0,
-            0,
-            82
-          ],
-          "name": "tile_1_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_2", "name": "physical"},
-          "translation": [
-            0,
-            102,
-            0
-          ],
-          "name": "tile_2_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_3", "name": "physical"},
-          "translation": [
-            0,
-            102,
-            82
-          ],
-          "name": "tile_3_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_4", "name": "physical"},
-          "translation": [
-            3,
-            0,
-            0
-          ],
-          "name": "tile_4_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_5", "name": "physical"},
-          "translation": [
-            3,
-            0,
-            82
-          ],
-          "name": "tile_5_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_6", "name": "physical"},
-          "translation": [
-            3,
-            102,
-            0
-          ],
-          "name": "tile_6_mm to world"
-        },
-        {
-          "type": "translation",
-          "output": "world",
-          "input": {"path": "tile_7", "name": "physical"},
-          "translation": [
-            3,
-            102,
-            82
-          ],
-          "name": "tile_7_mm to world"
-        }
-      ],
-      "coordinateSystems": [
-        {
-          "name": "world",
-          "axes": [
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "micrometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "micrometer",
-              "discrete": false
-            }
-          ]
-        }
-      ]
+      "scene": {
+        "coordinateTransformations": [
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_0", "name": "physical"},
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "name": "tile_0_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_1", "name": "physical"},
+            "translation": [
+              0,
+              0,
+              82
+            ],
+            "name": "tile_1_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_2", "name": "physical"},
+            "translation": [
+              0,
+              102,
+              0
+            ],
+            "name": "tile_2_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_3", "name": "physical"},
+            "translation": [
+              0,
+              102,
+              82
+            ],
+            "name": "tile_3_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_4", "name": "physical"},
+            "translation": [
+              3,
+              0,
+              0
+            ],
+            "name": "tile_4_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_5", "name": "physical"},
+            "translation": [
+              3,
+              0,
+              82
+            ],
+            "name": "tile_5_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_6", "name": "physical"},
+            "translation": [
+              3,
+              102,
+              0
+            ],
+            "name": "tile_6_mm to world"
+          },
+          {
+            "type": "translation",
+            "output": "world",
+            "input": {"path": "tile_7", "name": "physical"},
+            "translation": [
+              3,
+              102,
+              82
+            ],
+            "name": "tile_7_mm to world"
+          }
+        ],
+        "coordinateSystems": [
+          {
+            "name": "world",
+            "axes": [
+              {
+                "type": "space",
+                "name": "x",
+                "unit": "micrometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "y",
+                "unit": "micrometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "z",
+                "unit": "micrometer",
+                "discrete": false
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }
