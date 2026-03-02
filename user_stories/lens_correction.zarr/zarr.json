@@ -12,26 +12,28 @@
             "output": {"name": "corrected"},
             "transformations": [
               {
-                "type": "displacements",
-                "name": "lens correction",
-                "path": "coordinateTransformations/lensCorrection",
-                "interpolation": "linear",
+                "transformation": {
+                  "type": "displacements",
+                  "path": "coordinateTransformations/lensCorrection"
+                },
                 "input_axes": [
-                  "y",
-                  "x"
+                  1,
+                  2
                 ],
                 "output_axes": [
-                  "y",
-                  "x"
+                  1,
+                  2
                 ]
               },
               {
-                "type": "identity",
+                "transformation": {
+                  "type": "identity"
+                },
                 "input_axes": [
-                  "z"
+                  0
                 ],
                 "output_axes": [
-                  "z"
+                  0
                 ]
               }
             ],
