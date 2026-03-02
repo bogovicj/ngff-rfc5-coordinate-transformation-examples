@@ -9,7 +9,7 @@
           {
             "type": "byDimension",
             "input": {"path": "image", "name": "raw"},
-            "output": "corrected",
+            "output": {"name": "corrected"},
             "transformations": [
               {
                 "type": "displacements",
