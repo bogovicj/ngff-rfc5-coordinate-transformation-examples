@@ -66,7 +66,7 @@
                     "scale": [2]
                   },
                   "output_axes": [1],
-                  "input_axes": [1],
+                  "input_axes": [1]
                 },
                 {
                   "transformation": {
@@ -74,7 +74,7 @@
                     "translation": [-10]
                   },
                   "output_axes": [0],
-                  "input_axes": [0],
+                  "input_axes": [0]
                 }
               ],
               "name": "transform-name"
