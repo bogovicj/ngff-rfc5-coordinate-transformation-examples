@@ -3,13 +3,13 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6.dev3",
       "multiscales": [
         {
           "name": "multiscales",
           "coordinateSystems": [
             {
-              "name": "JRC2018F",
+              "name": "physical",
               "axes": [
                 {
                   "type": "space",

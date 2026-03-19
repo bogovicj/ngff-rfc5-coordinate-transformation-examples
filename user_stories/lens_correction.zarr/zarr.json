@@ -3,88 +3,69 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
-      "coordinateTransformations": [
-        {
-          "type": "byDimension",
-          "input": "corrected",
-          "output": "raw",
-          "transformations": [
-            {
-              "type": "displacements",
-              "name": "lens correction",
-              "path": "coordinateTransformations/lensCorrection",
-              "interpolation": "linear",
-              "input": [
-                "y",
-                "x"
-              ],
-              "output": [
-                "y",
-                "x"
-              ]
-            },
-            {
-              "type": "identity",
-              "input": [
-                "z"
-              ],
-              "output": [
-                "z"
-              ]
-            }
-          ],
-          "name": "lens correction 3d"
-        }
-      ],
-      "coordinateSystems": [
-        {
-          "name": "raw",
-          "axes": [
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "nanometer",
-              "discrete": false
-            }
-          ]
-        },
-        {
-          "name": "corrected",
-          "axes": [
-            {
-              "type": "space",
-              "name": "z",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "y",
-              "unit": "nanometer",
-              "discrete": false
-            },
-            {
-              "type": "space",
-              "name": "x",
-              "unit": "nanometer",
-              "discrete": false
-            }
-          ]
-        }
-      ]
+      "version": "0.6.dev3",
+      "scene": {
+        "coordinateTransformations": [
+          {
+            "type": "byDimension",
+            "input": {"path": "image", "name": "raw"},
+            "output": {"name": "corrected"},
+            "transformations": [
+              {
+                "transformation": {
+                  "type": "displacements",
+                  "path": "coordinateTransformations/lensCorrection"
+                },
+                "input_axes": [
+                  1,
+                  2
+                ],
+                "output_axes": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "transformation": {
+                  "type": "identity"
+                },
+                "input_axes": [
+                  0
+                ],
+                "output_axes": [
+                  0
+                ]
+              }
+            ],
+            "name": "lens correction 3d"
+          }
+        ],
+        "coordinateSystems": [
+          {
+            "name": "corrected",
+            "axes": [
+              {
+                "type": "space",
+                "name": "z",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "y",
+                "unit": "nanometer",
+                "discrete": false
+              },
+              {
+                "type": "space",
+                "name": "x",
+                "unit": "nanometer",
+                "discrete": false
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }

@@ -56,11 +56,6 @@ The transformations here are identical to those in the `affine_multiscale.zarr` 
 
 An example using the `translation` transformation type.
 
-
-## basic_binary
-
-Example of basic transformations that store their parameters in zarr arrays. 
-
 ### scaleParams.zarr
 
 A tranformation of type `scale` using the `path` parameter to reference the zarr array containing its parameters.
@@ -68,7 +63,6 @@ A tranformation of type `scale` using the `path` parameter to reference the zarr
 ### translationParams.zarr
 
 A tranformation of type `translation` using the `path` parameter to reference the zarr array containing its parameters.
-
 
 ## simple
 
@@ -97,20 +91,19 @@ An example using the `rotation` transformation type. Note that the rotation is a
 
 An example using the `rotation` transformation type for which its parameters are stored in zarr array.
 
-
 ## nonlinear
 
 Examples of new, potentially non-linear transformation types. Implementations need not support these transformations.
 
 ### invDisplacements.zarr
 
-An example using the `displacements` transformation type wrapped in an `inverseOf` transformation.
+An example using the `displacements` transformation type.
 
 This transformation is identical to that in the `invCoordinates.zarr`, but represented differently.
 
 ### invCoordinates.zarr
 
-An example using the `coordinates` transformation type wrapped in an `inverseOf` transformation.
+An example using the `coordinates` transformation type.
 
 This transformation is identical to that in the `invDisplacements.zarr`, but represented differently.
 

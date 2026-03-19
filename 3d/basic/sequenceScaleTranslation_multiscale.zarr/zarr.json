@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev1",
+      "version": "0.6.dev3",
       "multiscales": [
         {
           "name": "multiscales",
@@ -39,7 +39,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s0",
                   "transformations": [
                     {
                       "type": "scale",
@@ -69,7 +69,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s1",
                   "transformations": [
                     {
                       "type": "scale",
@@ -99,7 +99,7 @@
                 {
                   "type": "sequence",
                   "output": "physical",
-                  "input": "",
+                  "input": "s2",
                   "transformations": [
                     {
                       "type": "scale",
