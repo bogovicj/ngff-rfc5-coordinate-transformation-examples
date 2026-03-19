@@ -1,0 +1,44 @@
+{
+  "zarr_format": 3,
+  "node_type": "group",
+  "attributes": {
+    "ome": {
+      "version": "0.6.dev3",
+      "scene": {
+        "coordinateTransformations": [
+          {
+            "name": "transformation between physical coordinate systems",
+            "input": {"path": "moving", "name": "physical"},
+            "output": {"path": "target", "name": "physical"},
+            "type": "displacements",
+            "path": "physical-to-physical"
+          },
+          {
+            "name": "transformation between pixel coordinate systems",
+            "input": {"path": "moving", "name": "pixel"},
+            "output": {"path": "target", "name": "pixel"},
+            "type": "sequence",
+            "transformations": [
+                {
+                    "name": "moving pixel to moving physical",
+                    "type": "scale",
+                    "scale": [0.1, 0.1]
+                },
+                {
+                    "name": "transformation between physical coordinate systems",
+                    "type": "displacements",
+                    "path": "physical-to-physical"
+                },
+                {
+                    "name": "target physical to target pixel",
+                    "type": "scale",
+                    "scale": [5, 5]
+                }
+            ]
+
+          }
+        ]
+      }
+    }
+  }
+}
