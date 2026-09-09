@@ -70,8 +70,7 @@
       "coordinateTransformations": [
         {
           "type": "scale",
-          "output": "0",
-          "input": "0",
+          "output": {"name": "0"},
           "scale": [
             1,
             1,

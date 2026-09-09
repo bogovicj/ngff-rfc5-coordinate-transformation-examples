@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "multiscales": [
         {
           "name": "multiscales",
@@ -32,22 +32,25 @@
               ]
             },
             {
-              "name": "array",
+              "name": "y-scaled",
               "axes": [
                 {
-                  "type": "array",
-                  "name": "dim_0",
-                  "discrete": true
+                  "type": "space",
+                  "name": "z",
+                  "unit": "micrometer",
+                  "discrete": false
                 },
                 {
-                  "type": "array",
-                  "name": "dim_1",
-                  "discrete": true
+                  "type": "space",
+                  "name": "y",
+                  "unit": "nanometer",
+                  "discrete": false
                 },
                 {
-                  "type": "array",
-                  "name": "dim_2",
-                  "discrete": true
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
                 }
               ]
             }
@@ -58,45 +61,26 @@
               "coordinateTransformations": [
                 {
                   "type": "identity",
-                  "input": "0",
-                  "output": "array"
+                  "output": {"name": "physical"},
+                  "input": {"path": "0"},
+                  "name": "transform-name"
                 }
               ]
-
             }
           ],
           "coordinateTransformations": [
             {
               "type": "byDimension",
-              "output": "physical",
-              "input": "array",
+              "output": {"name": "y-scaled"},
+              "input": {"name": "physical"},
               "transformations": [
                 {
-                  "type": "scale",
-                  "output_axes": [
-                    "x",
-                    "y"
-                  ],
-                  "input_axes": [
-                    "dim_0",
-                    "dim_1"
-                  ],
-                  "scale": [
-                    3,
-                    2
-                  ]
-                },
-                {
-                  "type": "translation",
-                  "output_axes": [
-                    "z"
-                  ],
-                  "input_axes": [
-                    "dim_2"
-                  ],
-                  "translation": [
-                    10
-                  ]
+                  "transformation": {
+                    "type": "scale",
+                    "scale": [1000]
+                  },
+                  "outputAxes": [1],
+                  "inputAxes": [1]
                 }
               ],
               "name": "transform-name"

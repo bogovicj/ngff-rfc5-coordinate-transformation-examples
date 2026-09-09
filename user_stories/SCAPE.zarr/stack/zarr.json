@@ -1,7 +1,7 @@
 {
 	"attributes": {
 		"ome": {
-			"version": "0.6.dev3",
+			"version": "0.6",
 			"multiscales": [
 				{
 					"coordinateSystems": [
@@ -56,8 +56,8 @@
 								{
                                     "name": "scale0 to physical",
                                     "type": "sequence",
-                                    "input": "scale0",
-                                    "output": "physical",
+                                    "input": {"path": "scale0"},
+                                    "output": {"name": "physical"},
                                     "transformations": [
                                         {
                                             "type": "scale",
@@ -85,8 +85,8 @@
 								{
 									"type": "sequence",
 									"name": "scale1 to physical",
-									"input": "scale1",
-									"output": "physical",
+									"input": {"path": "scale1"},
+									"output": {"name": "physical"},
 									"transformations": [
 										{
 											"scale": [
@@ -112,8 +112,8 @@
 					"coordinateTransformations":[
 						{
 							"name": "deskewing",
-							"input": "physical",
-							"output": "unskewed",
+							"input": {"name": "physical"},
+							"output": {"name": "unskewed"},
 							"type": "affine",
 							"affine": [
 								[1.0, 0.0, 0.0, 0.0],

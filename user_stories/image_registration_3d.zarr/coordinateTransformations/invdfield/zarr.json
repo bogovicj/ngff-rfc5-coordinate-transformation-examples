@@ -75,8 +75,7 @@
       "coordinateTransformations": [
         {
           "type": "scale",
-          "output": "FCWB",
-          "input": "invdfield",
+          "output": {"name": "FCWB"},
           "name": "",
           "scale": [
             1.76,

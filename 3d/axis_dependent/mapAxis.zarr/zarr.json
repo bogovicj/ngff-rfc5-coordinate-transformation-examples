@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "multiscales": [
         {
           "name": "multiscales",
@@ -32,22 +32,25 @@
               ]
             },
             {
-              "name": "array",
+              "name": "permuted",
               "axes": [
                 {
-                  "type": "array",
-                  "name": "dim_0",
-                  "discrete": true
+                  "type": "space",
+                  "name": "z",
+                  "unit": "micrometer",
+                  "discrete": false
                 },
                 {
-                  "type": "array",
-                  "name": "dim_1",
-                  "discrete": true
+                  "type": "space",
+                  "name": "y",
+                  "unit": "micrometer",
+                  "discrete": false
                 },
                 {
-                  "type": "array",
-                  "name": "dim_2",
-                  "discrete": true
+                  "type": "space",
+                  "name": "x",
+                  "unit": "micrometer",
+                  "discrete": false
                 }
               ]
             }
@@ -58,8 +61,8 @@
               "coordinateTransformations": [
                 {
                   "type": "identity",
-                  "output": "array",
-                  "input": "0"
+                  "output": {"name": "physical"},
+                  "input": {"path": "0"}
                 }
               ]
 
@@ -68,8 +71,8 @@
           "coordinateTransformations": [
             {
               "type": "mapAxis",
-              "output": "physical",
-              "input": "array",
+              "output": {"name": "permuted"},
+              "input": {"name": "physical"},
               "name": "transform-name",
               "mapAxis": [2, 1, 0]
             }

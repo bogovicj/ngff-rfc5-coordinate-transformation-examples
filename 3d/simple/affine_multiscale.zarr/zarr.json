@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "multiscales": [
         {
           "name": "multiscales",
@@ -61,8 +61,8 @@
               "coordinateTransformations": [
                 {
                   "type": "sequence",
-                  "output": "physical",
-                  "input": "s0",
+                  "output": {"name": "physical"},
+                  "input": {"path": "s0"},
                   "name": "s0 to physical",
                   "transformations": [
                     {
@@ -90,8 +90,8 @@
               "coordinateTransformations": [
                 {
                   "type": "sequence",
-                  "output": "physical",
-                  "input": "s1",
+                  "output": {"name": "physical"},
+                  "input": {"path": "s1"},
                   "name": "s1 to physical",
                   "transformations": [
                     {
@@ -119,8 +119,8 @@
               "coordinateTransformations": [
                 {
                   "type": "sequence",
-                  "output": "physical",
-                  "input": "s2",
+                  "output": {"name": "physical"},
+                  "input": {"path": "s2"},
                   "name": "s2 to physical",
                   "transformations": [
                     {
@@ -147,8 +147,8 @@
           "coordinateTransformations": [
             {
               "type": "affine",
-              "output": "sheared",
-              "input": "physical",
+              "output": {"name": "sheared"},
+              "input": {"name": "physical"},
               "name": "physical-to-sheared",
               "affine": [
                 [

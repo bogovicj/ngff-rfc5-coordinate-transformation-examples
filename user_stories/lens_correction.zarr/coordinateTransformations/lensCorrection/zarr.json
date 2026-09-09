@@ -67,8 +67,7 @@
       "coordinateTransformations": [
         {
           "type": "scale",
-          "output": "raw2d",
-          "input": ".",
+          "output": {"name": "raw2d"},
           "name": "displacement field sample spacing",
           "scale": [
             5,

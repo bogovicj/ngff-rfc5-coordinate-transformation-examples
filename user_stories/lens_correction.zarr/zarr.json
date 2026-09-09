@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "scene": {
         "coordinateTransformations": [
           {
@@ -16,11 +16,11 @@
                   "type": "displacements",
                   "path": "coordinateTransformations/lensCorrection"
                 },
-                "input_axes": [
+                "inputAxes": [
                   1,
                   2
                 ],
-                "output_axes": [
+                "outputAxes": [
                   1,
                   2
                 ]
@@ -29,10 +29,10 @@
                 "transformation": {
                   "type": "identity"
                 },
-                "input_axes": [
+                "inputAxes": [
                   0
                 ],
-                "output_axes": [
+                "outputAxes": [
                   0
                 ]
               }

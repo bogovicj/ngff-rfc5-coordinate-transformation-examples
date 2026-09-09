@@ -3,7 +3,7 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "multiscales": [
         {
           "name": "multiscales",
@@ -62,8 +62,8 @@
                 {
                   "type": "scale",
                   "scale": [1, 1, 1],
-                  "output": "physical",
-                  "input": "array",
+                  "output": {"name": "physical"},
+                  "input": {"path": "array"},
                   "name": "array-to-physical"
                 }
               ]
@@ -72,9 +72,9 @@
           "coordinateTransformations": [
             {
               "type": "rotation",
-              "output": "rotated",
+              "output": {"name": "rotated"},
               "path": "rotationParams",
-              "input": "physical",
+              "input": {"name": "physical"},
               "name": "physical-to-rotated"
             }
           ]

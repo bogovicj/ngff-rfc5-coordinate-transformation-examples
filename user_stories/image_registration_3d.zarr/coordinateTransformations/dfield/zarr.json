@@ -81,8 +81,7 @@
       "coordinateTransformations": [
         {
           "type": "scale",
-          "output": "JRC2018F",
-          "input": "dfield",
+          "output": {"name": "JRC2018F"},
           "name": "",
           "scale": [
             1.76,

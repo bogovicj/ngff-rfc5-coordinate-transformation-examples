@@ -3,12 +3,12 @@
   "node_type": "group",
   "attributes": {
     "ome": {
-      "version": "0.6.dev3",
+      "version": "0.6",
       "scene": {
         "coordinateTransformations": [
           {
             "type": "translation",
-            "output": "world",
+            "output": {"name": "world"},
             "input": {"path": "stack", "name": "unskewed"},
             "translation": [
               5882.2,
