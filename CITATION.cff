@@ -15,7 +15,16 @@ authors:
     orcid: "https://orcid.org/0000-0003-1273-2412"
   - given-names: David
     family-names: Stansby
-    affiliation: University College London    orcid: "https://orcid.org/0000-0002-1365-1908"
+    affiliation: University College London
+    orcid: "https://orcid.org/0000-0002-1365-1908"
+  - given-names: Will
+    family-names: Moore
+    affiliation: University of Dundee
+    orchid: https://orcid.org/0000-0002-7264-8338
+  - given-names: Luca
+    family-names: Marconato
+    affiliation: EMBL
+    orchid: https://orcid.org/0000-0003-3198-1326
 keywords:
   - computer science
   - software
